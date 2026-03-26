@@ -1,0 +1,944 @@
+{
+  "catalog_version": "1.0.0",
+  "firmware_version": "3.80",
+  "last_updated": "2026-03-22",
+  "dsp_disclaimer": "DSP usage percentages are based on the Helix firmware 3.80 specification. Actual values may vary based on model complexity and effect parameters. Mono and stereo modes have different DSP loads.",
+  "blocks": [
+    {
+      "id": "fx_loop_1",
+      "name": "FX Loop 1",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the FX Loop 1 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_FXLoopMono1"
+    },
+    {
+      "id": "fx_loop_1_2",
+      "name": "FX Loop 1/2",
+      "category": "Utility",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the FX Loop 1/2 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 1.73,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_FXLoopStereo1_2"
+    },
+    {
+      "id": "fx_loop_2",
+      "name": "FX Loop 2",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the FX Loop 2 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_FXLoopMono2"
+    },
+    {
+      "id": "fx_loop_3",
+      "name": "FX Loop 3",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the FX Loop 3 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_FXLoopMono3"
+    },
+    {
+      "id": "fx_loop_3_4",
+      "name": "FX Loop 3/4",
+      "category": "Utility",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the FX Loop 3/4 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 1.73,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_FXLoopStereo3_4"
+    },
+    {
+      "id": "fx_loop_4",
+      "name": "FX Loop 4",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the FX Loop 4 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_FXLoopMono4"
+    },
+    {
+      "id": "return_1",
+      "name": "Return 1",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Return 1 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.41,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_ReturnMono1"
+    },
+    {
+      "id": "return_1_2",
+      "name": "Return 1/2",
+      "category": "Utility",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Return 1/2 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 1.86,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_ReturnStereo1_2"
+    },
+    {
+      "id": "return_2",
+      "name": "Return 2",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Return 2 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.41,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_ReturnMono2"
+    },
+    {
+      "id": "return_3",
+      "name": "Return 3",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Return 3 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.41,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_ReturnMono3"
+    },
+    {
+      "id": "return_3_4",
+      "name": "Return 3/4",
+      "category": "Utility",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Return 3/4 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 1.86,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_ReturnStereo3_4"
+    },
+    {
+      "id": "return_4",
+      "name": "Return 4",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Return 4 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.41,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Return",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the return of the effect.",
+          "visible_when": null,
+          "hlx_key": "Return"
+        },
+        {
+          "name": "Mix",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_ReturnMono4"
+    },
+    {
+      "id": "send_1",
+      "name": "Send 1",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Send 1 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Dry Thru",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the dry thru of the effect.",
+          "visible_when": null,
+          "hlx_key": "DryThru"
+        }
+      ],
+      "symbolicID": "HD2_SendMono1"
+    },
+    {
+      "id": "send_1_2",
+      "name": "Send 1/2",
+      "category": "Utility",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Send 1/2 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 1.3,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Dry Thru",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the dry thru of the effect.",
+          "visible_when": null,
+          "hlx_key": "DryThru"
+        }
+      ],
+      "symbolicID": "HD2_SendStereo1_2"
+    },
+    {
+      "id": "send_2",
+      "name": "Send 2",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Send 2 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Dry Thru",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the dry thru of the effect.",
+          "visible_when": null,
+          "hlx_key": "DryThru"
+        }
+      ],
+      "symbolicID": "HD2_SendMono2"
+    },
+    {
+      "id": "send_3",
+      "name": "Send 3",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Send 3 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Dry Thru",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the dry thru of the effect.",
+          "visible_when": null,
+          "hlx_key": "DryThru"
+        }
+      ],
+      "symbolicID": "HD2_SendMono3"
+    },
+    {
+      "id": "send_3_4",
+      "name": "Send 3/4",
+      "category": "Utility",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Send 3/4 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 1.3,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Dry Thru",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the dry thru of the effect.",
+          "visible_when": null,
+          "hlx_key": "DryThru"
+        }
+      ],
+      "symbolicID": "HD2_SendStereo3_4"
+    },
+    {
+      "id": "send_4",
+      "name": "Send 4",
+      "category": "Utility",
+      "hx_subcategory": "Mono",
+      "subcategory": "Utility",
+      "based_on": null,
+      "description": "This is the Send 4 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Send",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the send of the effect.",
+          "visible_when": null,
+          "hlx_key": "Send"
+        },
+        {
+          "name": "Dry Thru",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the dry thru of the effect.",
+          "visible_when": null,
+          "hlx_key": "DryThru"
+        }
+      ],
+      "symbolicID": "HD2_SendMono4"
+    }
+  ]
+}

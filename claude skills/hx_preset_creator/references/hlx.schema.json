@@ -1,0 +1,555 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hx_stomp_preset.schema.json",
+  "title": "HX Stomp Preset (.hlx)",
+  "description": "Schema for Line 6 HX Stomp preset files (.hlx). Covers the complete file structure: metadata, DSP signal paths, routing blocks, effect blocks, snapshots, footswitch config, IR UUID table, and global parameters. Parameter values inside effect blocks are stored as normalised floats (0.0–1.0) relative to each parameter's min/max range as defined in the block catalog. Parameter keys use the symbolicID from the .models files (e.g. 'Ch1Drive', not the display name 'Ch 1 Drive') — use the hlx_key field on each catalog parameter.",
+  "type": "object",
+  "required": ["version", "schema", "data"],
+  "additionalProperties": false,
+
+  "properties": {
+    "version": {
+      "type": "integer",
+      "description": "Preset file format version. HX Edit 3.x uses version 6.",
+      "const": 6
+    },
+
+    "schema": {
+      "type": "string",
+      "description": "File type identifier. Always 'L6Preset' for preset files.",
+      "const": "L6Preset"
+    },
+
+    "meta": {
+      "type": "object",
+      "description": "Top-level file metadata written by HX Edit (separate from data.meta). Contains provenance flags.",
+      "additionalProperties": true,
+      "properties": {
+        "original": {
+          "type": "integer",
+          "description": "Whether this is an original (unmodified) factory preset. 0 = user-modified."
+        },
+        "pbn": {
+          "type": "integer",
+          "description": "Preset Bank Number. 0 for most user presets."
+        },
+        "premium": {
+          "type": "integer",
+          "description": "Premium preset flag. 0 = standard user preset."
+        }
+      }
+    },
+
+    "data": {
+      "type": "object",
+      "description": "Root data container for all preset content.",
+      "required": ["meta", "device", "tone"],
+      "additionalProperties": false,
+
+      "properties": {
+        "meta": { "$ref": "#/$defs/Meta" },
+        "device": { "$ref": "#/$defs/DeviceId" },
+        "device_version": {
+          "type": "integer",
+          "description": "Firmware version encoded as a single integer. HX Stomp firmware 3.80 = 43057152. Firmware 1.00 default template = 37814625."
+        },
+        "tone": { "$ref": "#/$defs/Tone" }
+      }
+    }
+  },
+
+  "$defs": {
+
+    "Meta": {
+      "type": "object",
+      "description": "Preset metadata written by HX Edit.",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Preset display name shown on the device and in HX Edit (max 16 characters).",
+          "minLength": 1,
+          "maxLength": 16
+        },
+        "application": {
+          "type": "string",
+          "description": "Name of the application that last saved the file (e.g. 'HX Edit')."
+        },
+        "build_sha": {
+          "type": "string",
+          "description": "Git SHA of the HX Edit build that wrote the file."
+        },
+        "modifieddate": {
+          "type": "integer",
+          "description": "Unix timestamp (seconds since epoch) of the last save."
+        },
+        "appversion": {
+          "type": "integer",
+          "description": "Encoded application version integer."
+        }
+      }
+    },
+
+    "DeviceId": {
+      "type": "integer",
+      "description": "Numeric identifier for the target Line 6 device.",
+      "oneOf": [
+        { "const": 2162689, "description": "Helix Floor" },
+        { "const": 2162690, "description": "Helix Rack" },
+        { "const": 2162692, "description": "Helix LT" },
+        { "const": 2162693, "description": "HX FX" },
+        { "const": 2162694, "description": "HX Stomp" },
+        { "const": 2162695, "description": "HX Stomp XL" }
+      ]
+    },
+
+    "Tone": {
+      "type": "object",
+      "description": "All signal-chain data for the preset: DSP paths, global settings, snapshots, footswitch configuration, IR UUID table, and Variax settings. The HX Stomp supports a maximum of 3 snapshots (snapshot0–snapshot2). Do not write snapshot3–snapshot7 into HX Stomp presets.",
+      "required": ["global", "dsp0"],
+      "additionalProperties": true,
+      "properties": {
+        "global":      { "$ref": "#/$defs/GlobalParams" },
+        "dsp0":        { "$ref": "#/$defs/DspPath" },
+        "dsp1":        { "$ref": "#/$defs/DspPath" },
+        "snapshot0":   { "$ref": "#/$defs/Snapshot" },
+        "snapshot1":   { "$ref": "#/$defs/Snapshot" },
+        "snapshot2":   { "$ref": "#/$defs/Snapshot" },
+        "footswitch":  { "$ref": "#/$defs/FootswitchConfig" },
+        "irUuidTable": { "$ref": "#/$defs/IrUuidTable" },
+        "variax":      { "$ref": "#/$defs/VariaxSettings" }
+      }
+    },
+
+    "GlobalParams": {
+      "type": "object",
+      "description": "Preset-wide global parameters. These are not per-block; they apply to the preset as a whole. In firmware 3.x the Variax settings may appear here OR in a separate top-level 'variax' section depending on firmware version.",
+      "required": ["@model", "@topology0"],
+      "additionalProperties": true,
+      "properties": {
+        "@model": {
+          "type": "string",
+          "description": "Always '@global_params'. Identifies this object as the global params block.",
+          "const": "@global_params"
+        },
+        "@topology0": {
+          "type": "string",
+          "description": "Signal routing topology for DSP 0 (main path). 'A' = single serial path. 'AB' = dual serial (A then B). 'Y' = Y-split (parallel then join). 'ABCD' = dual parallel paths.",
+          "enum": ["A", "AB", "Y", "ABCD", ""]
+        },
+        "@topology1": {
+          "description": "Signal routing topology for DSP 1. Same string values as @topology0, or 0 (integer) meaning unused.",
+          "oneOf": [
+            { "type": "string", "enum": ["A", "AB", "Y", "ABCD", ""] },
+            { "type": "integer", "const": 0 }
+          ]
+        },
+        "@tempo": {
+          "type": "number",
+          "description": "Preset tempo in BPM. Range 20–240.",
+          "minimum": 20,
+          "maximum": 240
+        },
+        "@guitarinputZ": {
+          "type": "integer",
+          "description": "Input impedance setting. 0=Auto, 1=1MΩ, 2=3.5MΩ, 3=22kΩ, 4=70kΩ, 5=136kΩ, 6=230kΩ, 7=1MΩ.",
+          "enum": [0, 1, 2, 3, 4, 5, 6, 7]
+        },
+        "@current_snapshot": {
+          "type": "integer",
+          "description": "Index of the snapshot that was active when the preset was last saved (0-based). HX Stomp max = 2.",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "@pedalstate": {
+          "type": "integer",
+          "description": "Footswitch layout state at time of save (device-specific bitmask)."
+        },
+        "@cursor_dsp": {
+          "type": "integer",
+          "description": "Last-selected DSP chip (0 or 1) in HX Edit cursor position."
+        },
+        "@cursor_path": {
+          "type": "integer",
+          "description": "Last-selected path within the DSP in HX Edit."
+        },
+        "@cursor_position": {
+          "type": "integer",
+          "description": "Last-selected block position in HX Edit."
+        },
+        "@cursor_group": {
+          "type": "string",
+          "description": "Last-selected block group identifier in HX Edit (e.g. 'block0')."
+        },
+        "@variax_model": {
+          "type": "integer",
+          "description": "Variax guitar model selection (0 = no Variax)."
+        },
+        "@variax_toneknob": {
+          "type": "number",
+          "description": "Variax tone knob position. -0.1 indicates no Variax override."
+        },
+        "@variax_volumeknob": {
+          "type": "number",
+          "description": "Variax volume knob position. -0.1 indicates no Variax override."
+        },
+        "@variax_customtuning": {
+          "type": "boolean",
+          "description": "Whether Variax custom tuning is active."
+        },
+        "@variax_lockctrls": {
+          "type": "integer",
+          "description": "Variax control lock state."
+        },
+        "@variax_magmode": {
+          "type": "boolean",
+          "description": "Whether Variax magnetic pickup mode is active."
+        },
+        "@variax_str1tuning": { "type": "integer", "description": "Variax string 1 tuning offset in semitones." },
+        "@variax_str2tuning": { "type": "integer", "description": "Variax string 2 tuning offset in semitones." },
+        "@variax_str3tuning": { "type": "integer", "description": "Variax string 3 tuning offset in semitones." },
+        "@variax_str4tuning": { "type": "integer", "description": "Variax string 4 tuning offset in semitones." },
+        "@variax_str5tuning": { "type": "integer", "description": "Variax string 5 tuning offset in semitones." },
+        "@variax_str6tuning": { "type": "integer", "description": "Variax string 6 tuning offset in semitones." }
+      }
+    },
+
+    "DspPath": {
+      "type": "object",
+      "description": "A single DSP signal path. Contains the fixed routing infrastructure blocks (input, split, join, output) and up to 6 effect block slots (block0–block5). An empty object {} is valid for an unused second DSP path (dsp1 on HX Stomp is typically empty).",
+      "additionalProperties": false,
+      "properties": {
+        "inputA":  { "$ref": "#/$defs/InputBlock" },
+        "inputB":  { "$ref": "#/$defs/InputBlock" },
+        "split":   { "$ref": "#/$defs/SplitBlock" },
+        "join":    { "$ref": "#/$defs/JoinBlock" },
+        "outputA": { "$ref": "#/$defs/OutputBlock" },
+        "outputB": { "$ref": "#/$defs/OutputBlock" },
+        "block0":  { "$ref": "#/$defs/EffectBlock" },
+        "block1":  { "$ref": "#/$defs/EffectBlock" },
+        "block2":  { "$ref": "#/$defs/EffectBlock" },
+        "block3":  { "$ref": "#/$defs/EffectBlock" },
+        "block4":  { "$ref": "#/$defs/EffectBlock" },
+        "block5":  { "$ref": "#/$defs/EffectBlock" }
+      }
+    },
+
+    "InputBlock": {
+      "type": "object",
+      "description": "Input routing block. Selects the audio source for this path.",
+      "required": ["@model", "@input"],
+      "additionalProperties": true,
+      "properties": {
+        "@model": {
+          "type": "string",
+          "description": "Device-specific input model identifier.",
+          "examples": [
+            "HelixStomp_AppDSPFlowInput",
+            "HD2_AppDSPFlow1Input",
+            "HD2_AppDSPFlow2Input"
+          ]
+        },
+        "@input": {
+          "type": "integer",
+          "description": "Input source selector. 0=None, 1=Guitar (main), 2=Aux, 3=Variax, 4=Mic, 5=Return 1, 6=Return 2."
+        },
+        "noiseGate": {
+          "type": "boolean",
+          "description": "Whether the built-in input noise gate is enabled."
+        },
+        "threshold": {
+          "type": "number",
+          "description": "Noise gate threshold in dB (−96 to 0). Stored in real dB units, not normalised.",
+          "minimum": -96,
+          "maximum": 0
+        },
+        "decay": {
+          "type": "number",
+          "description": "Noise gate decay time (0.0–1.0 normalised).",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+
+    "SplitBlock": {
+      "type": "object",
+      "description": "Signal path split point. Routes signal from Path A into Path A and Path B.",
+      "required": ["@model", "@enabled", "@position"],
+      "additionalProperties": false,
+      "properties": {
+        "@model": {
+          "type": "string",
+          "description": "Split model type.",
+          "examples": ["HD2_AppDSPFlowSplitY", "HD2_AppDSPFlowSplitAB", "HD2_AppDSPFlowSplitCrossFade"]
+        },
+        "@enabled": { "type": "boolean", "description": "Whether the split is active." },
+        "@position": {
+          "type": "integer",
+          "description": "Position in the signal chain (0-based block slot index).",
+          "minimum": 0
+        },
+        "@no_snapshot_bypass": {
+          "type": "boolean",
+          "description": "If true, snapshots cannot change the bypass state of this block."
+        },
+        "bypass": {
+          "type": "boolean",
+          "description": "Whether the split block is in bypass (sum to mono)."
+        },
+        "BalanceA": {
+          "type": "number",
+          "description": "Level of Path A signal after the split (0.0–1.0, 0.5 = unity).",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "BalanceB": {
+          "type": "number",
+          "description": "Level of Path B signal after the split (0.0–1.0, 0.5 = unity).",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+
+    "JoinBlock": {
+      "type": "object",
+      "description": "Signal path merge point. Combines Path A and Path B back into a single signal.",
+      "required": ["@model", "@enabled", "@position"],
+      "additionalProperties": false,
+      "properties": {
+        "@model": {
+          "type": "string",
+          "description": "Join model type.",
+          "const": "HD2_AppDSPFlowJoin"
+        },
+        "@enabled": { "type": "boolean", "description": "Whether the join is active." },
+        "@position": {
+          "type": "integer",
+          "description": "Position in the signal chain (0-based block slot index).",
+          "minimum": 0
+        },
+        "@no_snapshot_bypass": {
+          "type": "boolean",
+          "description": "If true, snapshots cannot change the bypass state of this block."
+        },
+        "Level": {
+          "type": "number",
+          "description": "Overall output gain of the join in dB (−∞ to +6 dB). 0 = unity.",
+          "minimum": -120,
+          "maximum": 6
+        },
+        "A Level": { "type": "number", "description": "Gain of Path A into the join in dB.", "minimum": -120, "maximum": 6 },
+        "B Level": { "type": "number", "description": "Gain of Path B into the join in dB.", "minimum": -120, "maximum": 6 },
+        "A Pan": { "type": "number", "description": "Pan of Path A (0=left, 0.5=center, 1=right).", "minimum": 0, "maximum": 1 },
+        "B Pan": { "type": "number", "description": "Pan of Path B (0=left, 0.5=center, 1=right).", "minimum": 0, "maximum": 1 },
+        "B Polarity": {
+          "type": "boolean",
+          "description": "Inverts the polarity of Path B before mixing."
+        }
+      }
+    },
+
+    "OutputBlock": {
+      "type": "object",
+      "description": "Output routing block. Controls where the processed signal is sent.",
+      "required": ["@model", "@output"],
+      "additionalProperties": true,
+      "properties": {
+        "@model": {
+          "type": "string",
+          "description": "Device-specific output model identifier.",
+          "examples": [
+            "HelixStomp_AppDSPFlowOutputMain",
+            "HelixStomp_AppDSPFlowOutputSend"
+          ]
+        },
+        "@output": {
+          "type": "integer",
+          "description": "Output destination selector. 0=None/Send, 1=Main L/R, 2=Phones, 3=USB."
+        },
+        "pan": {
+          "type": "number",
+          "description": "Output pan position (0.0=left, 0.5=center, 1.0=right).",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "gain": {
+          "type": "number",
+          "description": "Output level trim in dB. 0 = unity.",
+          "minimum": -120,
+          "maximum": 6
+        },
+        "Type": {
+          "type": "boolean",
+          "description": "Output type for Send output blocks. True = instrument level, False = line level."
+        }
+      }
+    },
+
+    "EffectBlock": {
+      "type": "object",
+      "description": "A single user-placed effect, amp, cab, or utility block. The @model field identifies which block from the catalog is loaded (use the catalog's symbolicID field). Parameter keys use the hlx_key from the catalog (the .models symbolicID for each parameter, e.g. 'Ch1Drive' not 'Ch 1 Drive'). Values are normalised floats (0.0–1.0): normalised = (display_value - param.min) / (param.max - param.min).",
+      "required": ["@model", "@enabled", "@position"],
+      "additionalProperties": true,
+      "properties": {
+        "@model": {
+          "type": "string",
+          "description": "The block's symbolicID from the catalog (e.g. 'HD2_DistKinkyBoost'). Must match a known block from master_blocks.json.",
+          "minLength": 1
+        },
+        "@enabled": {
+          "type": "boolean",
+          "description": "Whether the block is active (true) or in bypass (false)."
+        },
+        "@position": {
+          "type": "integer",
+          "description": "Slot index within the signal path (0-based). 0–5 on HX Stomp single path.",
+          "minimum": 0,
+          "maximum": 7
+        },
+        "@stereo": {
+          "type": "boolean",
+          "description": "Whether the block is running in stereo mode. Only present on blocks that support both modes."
+        },
+        "@path": {
+          "type": "integer",
+          "description": "Which sub-path within the DSP this block is on. 0 = Path A, 1 = Path B.",
+          "enum": [0, 1]
+        },
+        "@type": {
+          "type": "integer",
+          "description": "Block category type hint used by HX Edit for UI rendering. Approximate values: 0=dynamics/fx, 1=amp, 5=IR, 7=delay/reverb. Not strictly required for device operation."
+        },
+        "@no_snapshot_bypass": {
+          "type": "boolean",
+          "description": "If true, snapshot bypass state changes cannot affect this block. Defaults to false."
+        },
+        "@trails": {
+          "type": "boolean",
+          "description": "Whether reverb or delay trails continue after the block is bypassed. Applicable to delay and reverb blocks only."
+        },
+        "@bypassvolume": {
+          "type": "number",
+          "description": "Volume level when the block is bypassed. 1 = unity (0 dB pass-through)."
+        }
+      }
+    },
+
+    "Snapshot": {
+      "type": "object",
+      "description": "A snapshot stores a named state for the preset — block bypass states, tempo override, and footswitch configuration. HX Stomp supports up to 3 snapshots (snapshot0–snapshot2). A minimal snapshot (from the default template) has only @name, @ledcolor, @tempo, @pedalstate. The 'blocks' object is added when block bypass states are configured.",
+      "required": ["@name"],
+      "additionalProperties": true,
+      "properties": {
+        "@name": {
+          "type": "string",
+          "description": "Display name for this snapshot shown on the device.",
+          "minLength": 1,
+          "maxLength": 16
+        },
+        "@valid": {
+          "type": "boolean",
+          "description": "Whether this snapshot has been configured. False = snapshot uses default/unconfigured state. Absent in minimal (default template) snapshots."
+        },
+        "@ledcolor": {
+          "type": "integer",
+          "description": "LED colour for the snapshot footswitch. Integer value — common values: 0=off/white, or a packed RGB integer. In HX Edit UI this maps to White/Red/Orange/Yellow/Green/Cyan/Blue/Violet."
+        },
+        "@tempo": {
+          "type": "number",
+          "description": "Tempo override for this snapshot in BPM. Overrides the preset global tempo when snapshot is active.",
+          "minimum": 20,
+          "maximum": 240
+        },
+        "@pedalstate": {
+          "type": "integer",
+          "description": "Footswitch layout state for this snapshot."
+        },
+        "blocks": {
+          "type": "object",
+          "description": "Per-block bypass state overrides for this snapshot. Key = DSP path ('dsp0', 'dsp1'). Value = object mapping block names ('block0'–'block5') to boolean: true = block is active (not bypassed), false = block is bypassed.",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": { "type": "boolean" }
+          }
+        }
+      }
+    },
+
+    "FootswitchConfig": {
+      "type": "object",
+      "description": "Footswitch label, LED colour, and behaviour configuration for each effect block. Keyed by DSP path ('dsp0', 'dsp1'). Each path maps block names to their footswitch settings.",
+      "additionalProperties": {
+        "type": "object",
+        "description": "Per-DSP-path footswitch config. Keys are block names (e.g. 'block0'–'block5').",
+        "additionalProperties": { "$ref": "#/$defs/FootswitchBlock" }
+      }
+    },
+
+    "FootswitchBlock": {
+      "type": "object",
+      "description": "Footswitch assignment and display settings for a single effect block.",
+      "additionalProperties": true,
+      "properties": {
+        "@fs_label": {
+          "type": "string",
+          "description": "Label shown on the footswitch display for this block. Typically the block's display name.",
+          "maxLength": 16
+        },
+        "@fs_enabled": {
+          "type": "boolean",
+          "description": "Whether a footswitch is assigned to this block."
+        },
+        "@fs_index": {
+          "type": "integer",
+          "description": "Which footswitch (1-based index) is assigned to this block.",
+          "minimum": 1
+        },
+        "@fs_ledcolor": {
+          "type": "integer",
+          "description": "LED colour as a packed 24-bit RGB integer (e.g. 527360 = green, 16711720 = blue). Not the same scale as snapshot @ledcolor."
+        },
+        "@fs_primary": {
+          "type": "boolean",
+          "description": "Whether this is the primary (not secondary) footswitch assignment for the block."
+        },
+        "@fs_momentary": {
+          "type": "boolean",
+          "description": "Whether the footswitch operates in momentary (hold) mode rather than latching toggle."
+        }
+      }
+    },
+
+    "IrUuidTable": {
+      "type": "object",
+      "description": "Maps IR slot indices ('000'–'127') to UUID strings identifying the loaded IR file. Empty string means the slot is empty. Only present in presets that use IR blocks. Generated and managed by HX Edit — do not write this manually; HX Edit will populate it when the preset loads.",
+      "additionalProperties": {
+        "type": "string",
+        "description": "UUID of the IR loaded in this slot, or empty string if the slot is unused."
+      }
+    },
+
+    "VariaxSettings": {
+      "type": "object",
+      "description": "Variax guitar settings stored as a separate top-level section (seen in some firmware versions). Contains the same @variax_* fields as GlobalParams. Only relevant if the user has a Variax guitar.",
+      "additionalProperties": true,
+      "properties": {
+        "@variax_model": { "type": "integer", "description": "Variax model selection (0 = no Variax)." },
+        "@variax_toneknob": { "type": "number", "description": "Variax tone knob. -0.1 = no override." },
+        "@variax_volumeknob": { "type": "number", "description": "Variax volume knob. -0.1 = no override." },
+        "@variax_customtuning": { "type": "boolean" },
+        "@variax_lockctrls": { "type": "integer" },
+        "@variax_magmode": { "type": "boolean" },
+        "@variax_str1tuning": { "type": "integer" },
+        "@variax_str2tuning": { "type": "integer" },
+        "@variax_str3tuning": { "type": "integer" },
+        "@variax_str4tuning": { "type": "integer" },
+        "@variax_str5tuning": { "type": "integer" },
+        "@variax_str6tuning": { "type": "integer" }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "catalog_version": "1.0.0",
+  "firmware_version": "3.80",
+  "last_updated": "2026-03-22",
+  "dsp_disclaimer": "DSP usage percentages are based on the Helix firmware 3.80 specification. Actual values may vary based on model complexity and effect parameters. Mono and stereo modes have different DSP loads.",
+  "blocks": [
+    {
+      "id": "gain",
+      "name": "Gain",
+      "category": "Volume/Pan",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Volume/Pan",
+      "based_on": null,
+      "description": "This is the Gain effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 0.35,
+        "stereo": 0.51,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        }
+      ],
+      "symbolicID": "HD2_VolPanGain"
+    },
+    {
+      "id": "pan",
+      "name": "Pan",
+      "category": "Volume/Pan",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Volume/Pan",
+      "based_on": null,
+      "description": "This is the Pan effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 0.52,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Pan",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the pan of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        }
+      ],
+      "symbolicID": "HD2_VolPanPan"
+    },
+    {
+      "id": "stereo_imager",
+      "name": "Stereo Imager",
+      "category": "Volume/Pan",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Volume/Pan",
+      "based_on": null,
+      "description": "This is the Stereo Imager effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 5.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Mode",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the mode of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mode"
+        },
+        {
+          "name": "Width",
+          "default": 1.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "Controls the stereo width of the effect.",
+          "visible_when": null,
+          "hlx_key": "Width"
+        },
+        {
+          "name": "Rotation",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the rotation of the effect.",
+          "visible_when": null,
+          "hlx_key": "Rotation"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_VolPanStereoImager"
+    },
+    {
+      "id": "stereo_width",
+      "name": "Stereo Width",
+      "category": "Volume/Pan",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Volume/Pan",
+      "based_on": null,
+      "description": "This is the Stereo Width effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": null,
+        "stereo": 1.1,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "stereo",
+        "inputs": 2,
+        "outputs": 2
+      },
+      "parameters": [
+        {
+          "name": "Width",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the stereo width of the effect.",
+          "visible_when": null,
+          "hlx_key": "Width"
+        },
+        {
+          "name": "LR In Swap",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the lr in swap of the effect.",
+          "visible_when": null,
+          "hlx_key": "LR In Swap"
+        },
+        {
+          "name": "Balance",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Balance"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "R Polarity",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the r polarity of the effect.",
+          "visible_when": null,
+          "hlx_key": "R Polarity"
+        }
+      ],
+      "symbolicID": "HD2_VolPanStereoWidth"
+    },
+    {
+      "id": "volume",
+      "name": "Volume",
+      "category": "Volume/Pan",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Volume/Pan",
+      "based_on": null,
+      "description": "This is the Volume effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 0.35,
+        "stereo": 0.46,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Curve",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the curve of the effect.",
+          "visible_when": null,
+          "hlx_key": "VolumeTaper"
+        }
+      ],
+      "symbolicID": "HD2_VolPanVol"
+    }
+  ]
+}

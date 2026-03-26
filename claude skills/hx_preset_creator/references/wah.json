@@ -1,0 +1,884 @@
+{
+  "catalog_version": "1.0.0",
+  "firmware_version": "3.80",
+  "last_updated": "2026-03-22",
+  "dsp_disclaimer": "DSP usage percentages are based on the Helix firmware 3.80 specification. Actual values may vary based on model complexity and effect parameters. Mono and stereo modes have different DSP loads.",
+  "blocks": [
+    {
+      "id": "chrome",
+      "name": "Chrome",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Chrome effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Fc Low",
+          "default": 470.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the fc low of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcLow"
+        },
+        {
+          "name": "Fc High",
+          "default": 2415.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the fc high of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcHigh"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahChrome"
+    },
+    {
+      "id": "chrome_custom",
+      "name": "Chrome Custom",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Chrome Custom effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Fc Low",
+          "default": 300.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the fc low of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcLow"
+        },
+        {
+          "name": "Fc High",
+          "default": 1975.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the fc high of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcHigh"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahChromeCustom"
+    },
+    {
+      "id": "colorful",
+      "name": "Colorful",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Colorful effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Fc Low",
+          "default": 280.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the fc low of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcLow"
+        },
+        {
+          "name": "Fc High",
+          "default": 2101.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the fc high of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcHigh"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahColorful"
+    },
+    {
+      "id": "conductor",
+      "name": "Conductor",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Conductor effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Fc Low",
+          "default": 392.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the fc low of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcLow"
+        },
+        {
+          "name": "Fc High",
+          "default": 922.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the fc high of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcHigh"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahConductor"
+    },
+    {
+      "id": "fassel",
+      "name": "Fassel",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Fassel effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Fc Low",
+          "default": 455.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the fc low of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcLow"
+        },
+        {
+          "name": "Fc High",
+          "default": 2155.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the fc high of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcHigh"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahFassel"
+    },
+    {
+      "id": "teardrop_310",
+      "name": "Teardrop 310",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Teardrop 310 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 2.85,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahTeardrop310"
+    },
+    {
+      "id": "teardrop_bass_q",
+      "name": "Teardrop Bass Q",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Teardrop Bass Q effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.0,
+        "stereo": 3.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Q Trim",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the q trim of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q Trim"
+        },
+        {
+          "name": "Volume Trim",
+          "default": 7.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the volume trim of the effect.",
+          "visible_when": null,
+          "hlx_key": "Volume Trim"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahTeardropBassQ"
+    },
+    {
+      "id": "throaty",
+      "name": "Throaty",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Throaty effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Fc Low",
+          "default": 310.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the fc low of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcLow"
+        },
+        {
+          "name": "Fc High",
+          "default": 1735.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the fc high of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcHigh"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahThroaty"
+    },
+    {
+      "id": "uk_wah_846",
+      "name": "UK Wah 846",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the UK Wah 846 effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 2.85,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 4.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahUKWah846"
+    },
+    {
+      "id": "vetta_wah",
+      "name": "Vetta Wah",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Vetta Wah effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Fc Low",
+          "default": 300.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the fc low of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcLow"
+        },
+        {
+          "name": "Fc High",
+          "default": 2300.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the fc high of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcHigh"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahVettaWah"
+    },
+    {
+      "id": "weeper",
+      "name": "Weeper",
+      "category": "Wah",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Wah",
+      "based_on": null,
+      "description": "This is the Weeper effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Position",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the position of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pedal"
+        },
+        {
+          "name": "Fc Low",
+          "default": 435.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the fc low of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcLow"
+        },
+        {
+          "name": "Fc High",
+          "default": 1901.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the fc high of the effect.",
+          "visible_when": null,
+          "hlx_key": "FcHigh"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_WahWeeper"
+    }
+  ]
+}

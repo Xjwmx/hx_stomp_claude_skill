@@ -1,0 +1,335 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hx_stomp_catalog.schema.json",
+  "title": "HX Stomp Block Catalog",
+  "description": "Schema for the HX Stomp effects block catalog. Validates the top-level catalog document and every block entry within it.",
+  "type": "object",
+  "required": [
+    "catalog_version",
+    "firmware_version",
+    "last_updated",
+    "dsp_disclaimer",
+    "blocks"
+  ],
+  "additionalProperties": false,
+
+  "properties": {
+    "catalog_version": {
+      "type": "string",
+      "description": "Semantic version of this catalog schema/data (e.g. '1.0.0').",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+
+    "firmware_version": {
+      "type": "string",
+      "description": "HX Stomp firmware version this catalog targets (e.g. '3.80').",
+      "pattern": "^\\d+\\.\\d+$"
+    },
+
+    "last_updated": {
+      "type": "string",
+      "description": "ISO 8601 date the catalog was last modified (e.g. '2026-03-21').",
+      "format": "date"
+    },
+
+    "dsp_disclaimer": {
+      "type": "string",
+      "description": "Human-readable disclaimer explaining that DSP cost values are community-derived estimates, not official Line 6 figures."
+    },
+
+    "blocks": {
+      "type": "array",
+      "description": "Flat array of all HX Stomp effect blocks. Includes HX (Mono/Stereo) and Legacy models.",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/Block" }
+    }
+  },
+
+  "$defs": {
+    "Block": {
+      "type": "object",
+      "description": "A single HX Stomp effects block.",
+      "required": [
+        "id",
+        "name",
+        "category",
+        "hx_subcategory",
+        "subcategory",
+        "based_on",
+        "description",
+        "real_life_alternative",
+        "dsp",
+        "io",
+        "parameters"
+      ],
+      "additionalProperties": false,
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Globally unique snake_case identifier for this block (e.g. 'dist_kinky_boost'). Used as a stable key in app logic.",
+          "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$"
+        },
+
+        "name": {
+          "type": "string",
+          "description": "Display name of the block exactly as it appears in the HX Stomp model list (e.g. 'Kinky Boost').",
+          "minLength": 1
+        },
+
+        "category": {
+          "type": "string",
+          "description": "Top-level block category as shown in the HX Stomp model list.",
+          "enum": [
+            "Distortion",
+            "Dynamics",
+            "EQ",
+            "Modulation",
+            "Delay",
+            "Reverb",
+            "Pitch/Synth",
+            "Filter",
+            "Wah",
+            "Volume/Pan",
+            "Looper",
+            "Amp",
+            "Amp+Cab",
+            "Preamp",
+            "Cab",
+            "IR",
+            "Utility"
+          ]
+        },
+
+        "hx_subcategory": {
+          "type": "string",
+          "description": "Subcategory as shown in the HX Stomp hardware model list. Reflects the device's own menu taxonomy.",
+          "enum": ["Mono", "Stereo", "Legacy"]
+        },
+
+        "subcategory": {
+          "type": "string",
+          "description": "Descriptive functional subcategory for app-side filtering and display (e.g. 'Boost', 'Phaser', 'Analog Delay'). Not tied to the hardware menu.",
+          "minLength": 1
+        },
+
+        "based_on": {
+          "type": ["string", "null"],
+          "description": "The specific real-world hardware this block models (e.g. 'Klon Centaur'). Null for Line 6 Original designs."
+        },
+
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of the block's character, behavior, and typical use cases.",
+          "minLength": 10
+        },
+
+        "real_life_alternative": {
+          "type": ["string", "null"],
+          "description": "Suggested real-world pedal(s) a player could use to achieve a similar sound. May list multiple options. Null if no clear analogue exists."
+        },
+
+        "dsp": {
+          "$ref": "#/$defs/DspCost"
+        },
+
+        "io": {
+          "$ref": "#/$defs/IO"
+        },
+
+        "parameters": {
+          "type": "array",
+          "description": "Ordered list of parameters for this block, matching the order they appear on the HX Stomp display.",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Parameter" }
+        }
+      }
+    },
+
+    "DspCost": {
+      "type": "object",
+      "description": "Community-estimated DSP cost for this block. See top-level dsp_disclaimer.",
+      "required": ["mono", "stereo", "confidence"],
+      "additionalProperties": false,
+
+      "properties": {
+        "mono": {
+          "type": ["number", "null"],
+          "description": "Estimated DSP cost when running in mono. Null if the block cannot run in mono.",
+          "minimum": 0
+        },
+
+        "stereo": {
+          "type": ["number", "null"],
+          "description": "Estimated DSP cost when running in stereo. Null if no stereo variant exists for this block.",
+          "minimum": 0
+        },
+
+        "confidence": {
+          "type": "string",
+          "description": "How reliable the DSP cost figures are. 'measured' = corroborated by community DSP meter observation. 'estimated' = derived by relative comparison. 'unknown' = no reliable data available.",
+          "enum": ["measured", "estimated", "unknown"]
+        },
+
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Any additional context about DSP cost for this block (e.g. mono-only, unusually expensive, legacy port)."
+        }
+      }
+    },
+
+    "IO": {
+      "type": "object",
+      "description": "Input/output routing configuration for this block.",
+      "required": ["routing", "inputs", "outputs"],
+      "additionalProperties": false,
+
+      "properties": {
+        "routing": {
+          "type": "string",
+          "description": "Signal routing capability of this block.",
+          "enum": ["mono", "stereo", "mono_or_stereo"]
+        },
+
+        "inputs": {
+          "type": "integer",
+          "description": "Number of audio inputs the block accepts.",
+          "enum": [1, 2]
+        },
+
+        "outputs": {
+          "type": "integer",
+          "description": "Number of audio outputs the block produces.",
+          "enum": [1, 2]
+        }
+      }
+    },
+
+    "Parameter": {
+      "type": "object",
+      "description": "A single adjustable parameter on an HX Stomp block.",
+      "required": [
+        "name",
+        "unit",
+        "min",
+        "max",
+        "default",
+        "step",
+        "type",
+        "visible_when",
+        "description"
+      ],
+      "additionalProperties": false,
+
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Parameter name exactly as it appears on the HX Stomp display (e.g. 'Feedback', 'Low Freq').",
+          "minLength": 1
+        },
+
+        "unit": {
+          "type": ["string", "null"],
+          "description": "Unit of measurement for this parameter (e.g. 'dB', 'Hz', 'ms', '%', 'semitones', ':1'). Null for dimensionless parameters (Q factor, 0–10 knobs) and toggle/enum types."
+        },
+
+        "min": {
+          "type": ["number", "null"],
+          "description": "Minimum value. Null for enum and toggle types where a numeric range is not applicable."
+        },
+
+        "max": {
+          "type": ["number", "null"],
+          "description": "Maximum value. Null for enum and toggle types where a numeric range is not applicable."
+        },
+
+        "default": {
+          "description": "Default value as set by the HX Stomp firmware when the block is first instantiated. Number for continuous/toggle types, string for enum types.",
+          "oneOf": [{ "type": "number" }, { "type": "string" }]
+        },
+
+        "step": {
+          "type": ["number", "null"],
+          "description": "Minimum increment between valid values. Null for enum types. Use 1 for integer-only parameters.",
+          "exclusiveMinimum": 0
+        },
+
+        "type": {
+          "type": "string",
+          "description": "Control type. 'continuous' = knob or slider with a numeric range. 'toggle' = binary on/off switch. 'enum' = multi-option selector (waveform, mode, key, scale, etc.).",
+          "enum": ["continuous", "toggle", "enum"]
+        },
+
+        "options": {
+          "type": "array",
+          "description": "Required when type is 'toggle' or 'enum'. Lists all valid named values in display order.",
+          "minItems": 2,
+          "items": { "type": "string" }
+        },
+
+        "visible_when": {
+          "description": "Conditional visibility rule. Null means the parameter is always visible. When present, the parameter is only shown when a named sibling parameter matches a specified value or array of values.",
+          "oneOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/VisibilityCondition" }
+          ]
+        },
+
+        "description": {
+          "type": "string",
+          "description": "Human-readable explanation of what the parameter does, its perceptual effect, and any practical tips.",
+          "minLength": 10
+        }
+      },
+
+      "if": {
+        "properties": { "type": { "enum": ["toggle", "enum"] } }
+      },
+      "then": {
+        "required": ["options"],
+        "properties": {
+          "min": { "type": "null" },
+          "max": { "type": "null" },
+          "step": { "type": "null" }
+        }
+      },
+      "else": {
+        "properties": {
+          "min": { "type": "number" },
+          "max": { "type": "number" },
+          "step": { "type": "number" }
+        }
+      }
+    },
+
+    "VisibilityCondition": {
+      "type": "object",
+      "description": "Defines when a parameter should be visible based on the current value of a sibling parameter.",
+      "required": ["param", "value"],
+      "additionalProperties": false,
+
+      "properties": {
+        "param": {
+          "type": "string",
+          "description": "The name of the sibling parameter whose value controls visibility (e.g. 'Voice 1 Mode').",
+          "minLength": 1
+        },
+
+        "value": {
+          "description": "The value (or array of values) the controlling parameter must equal for this parameter to be visible.",
+          "oneOf": [
+            { "type": "string" },
+            { "type": "number" },
+            {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "oneOf": [{ "type": "string" }, { "type": "number" }]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

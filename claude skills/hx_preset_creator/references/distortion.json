@@ -1,0 +1,5185 @@
+{
+  "catalog_version": "1.0.0",
+  "firmware_version": "3.80",
+  "last_updated": "2026-03-22",
+  "dsp_disclaimer": "DSP usage percentages are based on the Helix firmware 3.80 specification. Actual values may vary based on model complexity and effect parameters. Mono and stereo modes have different DSP loads.",
+  "blocks": [
+    {
+      "id": "alpaca_rouge",
+      "name": "Alpaca Rouge",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Mantic Density Hulk",
+      "description": "Massive fuzz based on the Mantic Density Hulk, extreme sustain and thick walls of fuzz.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 8.0,
+        "stereo": 14.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 3.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Hi Cut",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the hi cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "HiCut"
+        },
+        {
+          "name": "Volume",
+          "default": 7.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the volume of the effect.",
+          "visible_when": null,
+          "hlx_key": "Volume"
+        }
+      ],
+      "symbolicID": "HD2_DistAlpacaRouge"
+    },
+    {
+      "id": "ampeg_scrambler",
+      "name": "Ampeg Scrambler",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Ampeg® Scrambler",
+      "description": "Bass overdrive based on the vintage Ampeg Scrambler, delivers bluesy, slightly fuzzy saturation.",
+      "real_life_alternative": "Ampeg Scrambler",
+      "dsp": {
+        "mono": 12.5,
+        "stereo": 23.75,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 7.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Blend",
+          "default": 6.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Mixes the effect with the original signal.",
+          "visible_when": null,
+          "hlx_key": "Blend"
+        },
+        {
+          "name": "Treble",
+          "default": 4.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Level",
+          "default": 6.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistAmpegScramblerOD"
+    },
+    {
+      "id": "arbitrator_fuzz",
+      "name": "Arbitrator Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": "Arbiter® Fuzz Face®",
+      "description": "Classic germanium fuzz based on the Arbiter Fuzz Face, delivering warm and woolly fuzz tones.",
+      "real_life_alternative": "Arbiter Fuzz Face",
+      "dsp": {
+        "mono": 4.76,
+        "stereo": 8.79,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Fuzz",
+          "default": 9.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the fuzz of the effect.",
+          "visible_when": null,
+          "hlx_key": "Fuzz"
+        },
+        {
+          "name": "Level",
+          "default": 5.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistArbitratorFuzz"
+    },
+    {
+      "id": "ballistic_fuzz",
+      "name": "Ballistic Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": "Electro-Harmonix® Russian Big Muff Pi®",
+      "description": "Russian-era Big Muff Pi fuzz with a more aggressive mid-forward character than the NYC version.",
+      "real_life_alternative": "Electro-Harmonix Big Muff Pi",
+      "dsp": {
+        "mono": 12.0,
+        "stereo": 22.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sustain",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sustain or hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sustain"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistBallisticFuzz"
+    },
+    {
+      "id": "bighorn_fuzz",
+      "name": "Bighorn Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": "Electro-Harmonix® Big Muff Pi® (Ram's Head)",
+      "description": "Ram's Head era Big Muff Pi fuzz, known for scooped mids and massive sustain.",
+      "real_life_alternative": "Electro-Harmonix Big Muff Pi",
+      "dsp": {
+        "mono": 8.0,
+        "stereo": 15.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sustain",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sustain or hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sustain"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistRamsHead"
+    },
+    {
+      "id": "bitcrusher",
+      "name": "Bitcrusher",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Bitcrusher",
+      "based_on": null,
+      "description": "Digital distortion effect that reduces bit depth and/or sample rate for lo-fi digital artifacts and aliasing noise.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 5.05,
+        "stereo": 9.15,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 48.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Bit Depth",
+          "default": 8.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 1.0,
+          "max": 24.0,
+          "step": 0.1,
+          "description": "Controls the bit depth of the effect.",
+          "visible_when": null,
+          "hlx_key": "BitDepth"
+        },
+        {
+          "name": "Sample Rate",
+          "default": 18000.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 100.0,
+          "max": 48000.0,
+          "step": 0.1,
+          "description": "Controls the sample rate of the effect.",
+          "visible_when": null,
+          "hlx_key": "SampleRate"
+        },
+        {
+          "name": "Low Cut",
+          "default": 19.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 19.9,
+          "max": 500.0,
+          "step": 0.1,
+          "description": "Controls the low cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowCut"
+        },
+        {
+          "name": "High Cut",
+          "default": 20100.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 20100.0,
+          "step": 0.1,
+          "description": "Controls the high cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighCut"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Open",
+          "default": -70.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -96.0,
+          "max": 0.0,
+          "step": 0.1,
+          "description": "Controls the open of the effect.",
+          "visible_when": null,
+          "hlx_key": "OpenThreshold"
+        },
+        {
+          "name": "Close",
+          "default": -70.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -96.0,
+          "max": 0.0,
+          "step": 0.1,
+          "description": "Controls the close of the effect.",
+          "visible_when": null,
+          "hlx_key": "CloseThreshold"
+        },
+        {
+          "name": "Hold Time",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 0.8,
+          "step": 0.1,
+          "description": "Controls the hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "HoldTime"
+        },
+        {
+          "name": "Decay",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 4.0,
+          "step": 0.1,
+          "description": "Controls how long the reverb tail sustains before fading to silence.",
+          "visible_when": null,
+          "hlx_key": "Decay"
+        }
+      ],
+      "symbolicID": "HD2_DistBitcrusher"
+    },
+    {
+      "id": "bronze_master",
+      "name": "Bronze Master",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "This is the Bronze Master effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.5,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Tone",
+          "default": 4,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "tonality"
+        },
+        {
+          "name": "Blend",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Mixes the effect with the original signal.",
+          "visible_when": null,
+          "hlx_key": "mixture"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "Line6BronzeMaster"
+    },
+    {
+      "id": "buzz_saw",
+      "name": "Buzz Saw",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "This is the Buzz Saw effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4BuzzSaw"
+    },
+    {
+      "id": "classic_dist",
+      "name": "Classic Dist",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "This is the Classic Dist effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Filter",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the filter of the effect.",
+          "visible_when": null,
+          "hlx_key": "Filter"
+        },
+        {
+          "name": "Treble",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4ClassicDistortion"
+    },
+    {
+      "id": "clawthorn_drive",
+      "name": "Clawthorn Drive",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Drive",
+      "based_on": null,
+      "description": "This is the Clawthorn Drive effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 13.4,
+        "stereo": 25.75,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "OD Gain",
+          "default": 4.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the od gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "ODGain"
+        },
+        {
+          "name": "OD Tone",
+          "default": 6.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the od tone of the effect.",
+          "visible_when": null,
+          "hlx_key": "ODTone"
+        },
+        {
+          "name": "OD Level",
+          "default": 3.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the od level of the effect.",
+          "visible_when": null,
+          "hlx_key": "ODLevel"
+        },
+        {
+          "name": "Low Boost",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the low boost of the effect.",
+          "visible_when": null,
+          "hlx_key": "ODLowBoost"
+        },
+        {
+          "name": "Fuzz",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the fuzz of the effect.",
+          "visible_when": null,
+          "hlx_key": "Fuzz"
+        },
+        {
+          "name": "Fuzz Oct",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the fuzz oct of the effect.",
+          "visible_when": null,
+          "hlx_key": "FuzzOct"
+        },
+        {
+          "name": "Fuzz Gain",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the fuzz gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "FuzzGain"
+        },
+        {
+          "name": "Fuzz Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the fuzz tone of the effect.",
+          "visible_when": null,
+          "hlx_key": "FuzzTone"
+        },
+        {
+          "name": "Fuzz Level",
+          "default": 2.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the fuzz level of the effect.",
+          "visible_when": null,
+          "hlx_key": "FuzzLevel"
+        }
+      ],
+      "symbolicID": "HD2_DistClawthornDrive"
+    },
+    {
+      "id": "colordrive",
+      "name": "Colordrive",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Drive",
+      "based_on": null,
+      "description": "This is the Colordrive effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4ColorDrive"
+    },
+    {
+      "id": "compulsive_drive",
+      "name": "Compulsive Drive",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Drive",
+      "based_on": "Fulltone® OCD",
+      "description": "High-headroom overdrive/distortion based on the Fulltone OCD, works well at both low and high gain settings.",
+      "real_life_alternative": "Fulltone OCD",
+      "dsp": {
+        "mono": 4.46,
+        "stereo": 8.08,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 6.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Peak Type",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the peak type of the effect.",
+          "visible_when": null,
+          "hlx_key": "LPHP"
+        },
+        {
+          "name": "Version",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the version of the effect.",
+          "visible_when": null,
+          "hlx_key": "Version"
+        },
+        {
+          "name": "Level",
+          "default": 6.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistCompulsiveDrive"
+    },
+    {
+      "id": "dark_dove_fuzz",
+      "name": "Dark Dove Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "Dark, warm fuzz with a smooth sustaining character, inspired by vintage silicon fuzz designs.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 10.0,
+        "stereo": 19.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sustain",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sustain or hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sustain"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistDarkDoveFuzz"
+    },
+    {
+      "id": "deez_one_mod",
+      "name": "Deez One Mod",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Overdrive",
+      "based_on": "BOSS® DS-1 (modified)",
+      "description": "Modified DS-1 distortion with tighter low end and extended high frequencies.",
+      "real_life_alternative": "BOSS DS-1 (modified)",
+      "dsp": {
+        "mono": 8.7,
+        "stereo": 16.4,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 6.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Tone",
+          "default": 6.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 2.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Clipping",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the clipping of the effect.",
+          "visible_when": null,
+          "hlx_key": "Clipping"
+        }
+      ],
+      "symbolicID": "HD2_DistDeezOneMod"
+    },
+    {
+      "id": "deez_one_vintage",
+      "name": "Deez One Vintage",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "BOSS® DS-1 (vintage)",
+      "description": "Vintage spec DS-1 distortion with the original circuit voicing and softer clipping.",
+      "real_life_alternative": "BOSS DS-1 (vintage)",
+      "dsp": {
+        "mono": 8.7,
+        "stereo": 16.4,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 8.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 7.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistDeezOneVintage"
+    },
+    {
+      "id": "deranged_master",
+      "name": "Deranged Master",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Dallas Rangemaster Treble Booster",
+      "description": "Treble booster modeled on the Dallas Rangemaster, adds harmonic bite and presence to amp input.",
+      "real_life_alternative": "Dallas Rangemaster",
+      "dsp": {
+        "mono": 5.2,
+        "stereo": 9.25,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 7.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 5.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Treble",
+          "default": 6.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistDerangedMaster"
+    },
+    {
+      "id": "dyhana_drive",
+      "name": "Dyhana Drive",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Drive",
+      "based_on": "Hermida Audio Zendrive",
+      "description": "Smooth amp-like overdrive based on the Hermida Audio Zendrive, great for bluesy single-coil tones.",
+      "real_life_alternative": "Hermida Zendrive",
+      "dsp": {
+        "mono": 6.5,
+        "stereo": 11.75,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 4.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Voice",
+          "default": 5.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the voice of the effect.",
+          "visible_when": null,
+          "hlx_key": "Voice"
+        },
+        {
+          "name": "Tone",
+          "default": 4.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 4.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistDhyanaDrive"
+    },
+    {
+      "id": "facial_fuzz",
+      "name": "Facial Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "This is the Facial Fuzz effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4FacialFuzz"
+    },
+    {
+      "id": "fuzz_pi",
+      "name": "Fuzz Pi",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "This is the Fuzz Pi effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4FuzzPi"
+    },
+    {
+      "id": "heavy_dist",
+      "name": "Heavy Dist",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "This is the Heavy Dist effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4HeavyDistortion"
+    },
+    {
+      "id": "hedgehog_d9",
+      "name": "Hedgehog D9",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "BOSS® DS-1 Distortion",
+      "description": "Classic hard-clipping distortion based on the BOSS DS-1, providing aggressive crunch and sustain.",
+      "real_life_alternative": "BOSS DS-1",
+      "dsp": {
+        "mono": 4.33,
+        "stereo": 7.82,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 7.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Tone",
+          "default": 2.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 6.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistHedgehogD9"
+    },
+    {
+      "id": "heir_apparent",
+      "name": "Heir Apparent",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Analogman® Prince of Tone",
+      "description": "Transparent overdrive based on the Analogman Prince of Tone, delivers musical clipping with clarity.",
+      "real_life_alternative": "Analogman Prince of Tone",
+      "dsp": {
+        "mono": 7.5,
+        "stereo": 15.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Presence",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Boosts or cuts high-frequency presence in the signal.",
+          "visible_when": null,
+          "hlx_key": "Presence"
+        },
+        {
+          "name": "Clipping",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the clipping of the effect.",
+          "visible_when": null,
+          "hlx_key": "Clipping"
+        },
+        {
+          "name": "Gain Mod",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1"
+          ],
+          "description": "Controls the gain mod of the effect.",
+          "visible_when": null,
+          "hlx_key": "GainMod"
+        },
+        {
+          "name": "Level",
+          "default": 6.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Voltage",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the voltage of the effect.",
+          "visible_when": null,
+          "hlx_key": "Voltage"
+        }
+      ],
+      "symbolicID": "HD2_DistHeirApparent"
+    },
+    {
+      "id": "horizon_drive",
+      "name": "Horizon Drive",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Drive",
+      "based_on": "Horizon Devices® Precision Drive",
+      "description": "High-gain overdrive/distortion with precision EQ for tight modern metal tones.",
+      "real_life_alternative": "Horizon Devices Precision Drive",
+      "dsp": {
+        "mono": 12.0,
+        "stereo": 22.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 2.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Attack",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Bright",
+          "default": 3.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the bright of the effect.",
+          "visible_when": null,
+          "hlx_key": "Bright"
+        },
+        {
+          "name": "Gate",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the gate of the effect.",
+          "visible_when": null,
+          "hlx_key": "Gate"
+        },
+        {
+          "name": "GateRange",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the gaterange of the effect.",
+          "visible_when": null,
+          "hlx_key": "Gate_Range"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistHorizonDrive"
+    },
+    {
+      "id": "industrial_fuzz",
+      "name": "Industrial Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": "Z.Vex® Fuzz Factory®",
+      "description": "Experimental fuzz based on the Z.Vex Fuzz Factory, capable of extreme and unconventional tones.",
+      "real_life_alternative": "Z.Vex Fuzz Factory",
+      "dsp": {
+        "mono": 9.59,
+        "stereo": 17.6,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Compress",
+          "default": 5.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the compress of the effect.",
+          "visible_when": null,
+          "hlx_key": "Compress"
+        },
+        {
+          "name": "Gate",
+          "default": 5.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the gate of the effect.",
+          "visible_when": null,
+          "hlx_key": "Gate"
+        },
+        {
+          "name": "Drive",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Stability",
+          "default": 7.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the stability of the effect.",
+          "visible_when": null,
+          "hlx_key": "Stability"
+        },
+        {
+          "name": "Oscillator",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the oscillator of the effect.",
+          "visible_when": null,
+          "hlx_key": "Oscillator"
+        },
+        {
+          "name": "Level",
+          "default": 7.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistIndustrialFuzz"
+    },
+    {
+      "id": "jet_fuzz",
+      "name": "Jet Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "This is the Jet Fuzz effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 7.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Feedback",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of signal fed back into the effect, increasing repeats or resonance.",
+          "visible_when": null,
+          "hlx_key": "Feedback"
+        },
+        {
+          "name": "Tone",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Rate",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Rate"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4JetFuzz"
+    },
+    {
+      "id": "jumbo_fuzz",
+      "name": "Jumbo Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "This is the Jumbo Fuzz effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4JumboFuzz"
+    },
+    {
+      "id": "killer_z",
+      "name": "Killer Z",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "This is the Killer Z effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.5,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Dist"
+        },
+        {
+          "name": "Contour",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the contour of the effect.",
+          "visible_when": null,
+          "hlx_key": "Contour"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Mid",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid Amt"
+        },
+        {
+          "name": "Mid Freq",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency for the mid-range EQ control.",
+          "visible_when": null,
+          "hlx_key": "Mid Freq"
+        }
+      ],
+      "symbolicID": "KillerZ"
+    },
+    {
+      "id": "kinky_boost",
+      "name": "Kinky Boost",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Boost",
+      "based_on": "Xotic® EP Booster",
+      "description": "Transparent boost pedal based on the Xotic EP Booster, adds presence and sparkle without coloring the core tone.",
+      "real_life_alternative": "Xotic EP Booster",
+      "dsp": {
+        "mono": 5.1,
+        "stereo": 9.1,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 5.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Boost",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the boost of the effect.",
+          "visible_when": null,
+          "hlx_key": "Boost"
+        },
+        {
+          "name": "Bright",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the bright of the effect.",
+          "visible_when": null,
+          "hlx_key": "Bright"
+        }
+      ],
+      "symbolicID": "HD2_DistKinkyBoost"
+    },
+    {
+      "id": "kwb",
+      "name": "KWB",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Beano Boost / Marshall Bluesbreaker circuit",
+      "description": "Warm overdrive with vintage character, based on early Beano Boost-style circuits.",
+      "real_life_alternative": "Marshall Bluesbreaker",
+      "dsp": {
+        "mono": 8.05,
+        "stereo": 15.05,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 6.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Push Diode",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "description": "Controls the push diode of the effect.",
+          "visible_when": null,
+          "hlx_key": "PushDiode"
+        },
+        {
+          "name": "Pull Diode",
+          "default": 3,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "description": "Controls the pull diode of the effect.",
+          "visible_when": null,
+          "hlx_key": "PullDiode"
+        },
+        {
+          "name": "Bass",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -12.0,
+          "max": 12.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Treble",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -12.0,
+          "max": 12.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Level",
+          "default": 6.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Asymmetry",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the asymmetry of the effect.",
+          "visible_when": null,
+          "hlx_key": "Asym"
+        }
+      ],
+      "symbolicID": "HD2_DistKWB"
+    },
+    {
+      "id": "l6_distortion",
+      "name": "L6 Distortion",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "This is the L6 Distortion effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4Line6Distortion"
+    },
+    {
+      "id": "l6_drive",
+      "name": "L6 Drive",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Drive",
+      "based_on": null,
+      "description": "This is the L6 Drive effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4Line6Drive"
+    },
+    {
+      "id": "legendary_drive",
+      "name": "Legendary Drive",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Drive",
+      "based_on": "Klon Centaur (Gold)",
+      "description": "Another take on the legendary Klon Centaur circuit, capturing the rare gold hardware version.",
+      "real_life_alternative": "Klon Centaur",
+      "dsp": {
+        "mono": 16.0,
+        "stereo": 31.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 7.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 5.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Middle",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the mid-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Middle"
+        },
+        {
+          "name": "Treble",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Presence",
+          "default": 5.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Boosts or cuts high-frequency presence in the signal.",
+          "visible_when": null,
+          "hlx_key": "Presence"
+        },
+        {
+          "name": "Volume",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the volume of the effect.",
+          "visible_when": null,
+          "hlx_key": "Volume"
+        }
+      ],
+      "symbolicID": "HD2_DistLegendaryDrive"
+    },
+    {
+      "id": "megaphone",
+      "name": "Megaphone",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "Lo-fi megaphone effect that simulates a bullhorn or telephone speaker for a trashy filtered sound.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.41,
+        "stereo": 5.15,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Grit",
+          "default": 7.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the grit of the effect.",
+          "visible_when": null,
+          "hlx_key": "Grit"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Focus",
+          "default": 6.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the focus of the effect.",
+          "visible_when": null,
+          "hlx_key": "Focus"
+        },
+        {
+          "name": "Space",
+          "default": 4.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the space of the effect.",
+          "visible_when": null,
+          "hlx_key": "Space"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 6.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistMegaphone"
+    },
+    {
+      "id": "minotaur",
+      "name": "Minotaur",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Klon Centaur",
+      "description": "Legendary transparent overdrive based on the Klon Centaur, adds warmth and sustain without altering core tone.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 8.55,
+        "stereo": 16.25,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 4.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Tone",
+          "default": 5.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 6.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistMinotaur"
+    },
+    {
+      "id": "obsidian_7000",
+      "name": "Obsidian 7000",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Darkglass Electronics® Microtubes B7K Ultra",
+      "description": "High-gain bass preamp/overdrive based on the Darkglass B7K Ultra, with parametric mid EQ.",
+      "real_life_alternative": "Darkglass Microtubes B7K",
+      "dsp": {
+        "mono": 7.88,
+        "stereo": 14.85,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 3.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Blend",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Mixes the effect with the original signal.",
+          "visible_when": null,
+          "hlx_key": "Blend"
+        },
+        {
+          "name": "Grunt",
+          "default": 2,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the grunt of the effect.",
+          "visible_when": null,
+          "hlx_key": "Grunt"
+        },
+        {
+          "name": "Attack",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Master",
+          "default": 5.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the master of the effect.",
+          "visible_when": null,
+          "hlx_key": "Master"
+        },
+        {
+          "name": "Bass",
+          "default": 5.5,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Lo Mid Freq",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the lo mid freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "LoMidFreq"
+        },
+        {
+          "name": "Lo Mid",
+          "default": -5.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the lo mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "LoMid"
+        },
+        {
+          "name": "Hi Mid Freq",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the hi mid freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "HiMidFreq"
+        },
+        {
+          "name": "Hi Mid",
+          "default": -4.6,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the hi mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "HiMid"
+        },
+        {
+          "name": "Treble",
+          "default": -1.5,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Distortion",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the distortion of the effect.",
+          "visible_when": null,
+          "hlx_key": "Distortion"
+        }
+      ],
+      "symbolicID": "HD2_DistObsidian7000"
+    },
+    {
+      "id": "octave_fuzz",
+      "name": "Octave Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "This is the Octave Fuzz effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 8.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4OctaveFuzz"
+    },
+    {
+      "id": "overdrive",
+      "name": "Overdrive",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Drive",
+      "based_on": null,
+      "description": "This is the Overdrive effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4Overdrive"
+    },
+    {
+      "id": "pillars",
+      "name": "Pillars",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "Line 6 Original high-gain distortion designed for modern metal and djent tones with tight low end.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 8.0,
+        "stereo": 15.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 4.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Tone",
+          "default": 6.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 2.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Mode",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the mode of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mode"
+        }
+      ],
+      "symbolicID": "HD2_DistPillars"
+    },
+    {
+      "id": "pocket_fuzz",
+      "name": "Pocket Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "Compact, versatile fuzz that covers everything from soft vintage sounds to thick sustaining tones.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 5.0,
+        "stereo": 9.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 4.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Level",
+          "default": 4.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistPocketFuzz"
+    },
+    {
+      "id": "prize_drive",
+      "name": "Prize Drive",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Drive",
+      "based_on": null,
+      "description": "Line 6 Original warm overdrive suitable for blues and classic rock, with musical gain staging.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 15.0,
+        "stereo": 28.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 4.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Spectrum",
+          "default": 7.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the spectrum of the effect.",
+          "visible_when": null,
+          "hlx_key": "Spectrum"
+        },
+        {
+          "name": "Level",
+          "default": 4.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Bass Cut",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the bass cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "Bass Cut"
+        },
+        {
+          "name": "Voltage",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the voltage of the effect.",
+          "visible_when": null,
+          "hlx_key": "Voltage"
+        }
+      ],
+      "symbolicID": "HD2_DistPrizeDrive"
+    },
+    {
+      "id": "ratatouille_dist",
+      "name": "Ratatouille Dist",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "ProCo® Turbo Rat",
+      "description": "High-gain Rat variant with added bass response and tighter distortion character.",
+      "real_life_alternative": "ProCo Turbo Rat",
+      "dsp": {
+        "mono": 8.5,
+        "stereo": 16.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 7.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Filter",
+          "default": 2.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the filter of the effect.",
+          "visible_when": null,
+          "hlx_key": "Filter"
+        },
+        {
+          "name": "Level",
+          "default": 7.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistRatatouilleDist"
+    },
+    {
+      "id": "regal_bass_di",
+      "name": "Regal Bass DI",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Bass Overdrive",
+      "based_on": null,
+      "description": "Line 6 Original bass DI with built-in tone shaping and gentle overdrive capabilities.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 7.5,
+        "stereo": 13.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Bass",
+          "default": 6.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Treble",
+          "default": 4.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Low Cut",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the low cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "Low Cut"
+        },
+        {
+          "name": "Volume",
+          "default": 2.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the volume of the effect.",
+          "visible_when": null,
+          "hlx_key": "Volume"
+        }
+      ],
+      "symbolicID": "HD2_DistRegalBassDI"
+    },
+    {
+      "id": "scream_808",
+      "name": "Scream 808",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Ibanez® TS-808 Tube Screamer®",
+      "description": "The original Tube Screamer, the TS-808 overdrive with classic warm midrange boost.",
+      "real_life_alternative": "Ibanez TS-808",
+      "dsp": {
+        "mono": 5.5,
+        "stereo": 10.08,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 5.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Tone",
+          "default": 6.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 6.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistScream808"
+    },
+    {
+      "id": "screamer",
+      "name": "Screamer",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "This is the Screamer effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 7.6,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Tone",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Treble",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4Screamer"
+    },
+    {
+      "id": "stupor_od",
+      "name": "Stupor OD",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Overdrive",
+      "based_on": "BOSS® SD-1 Super OverDrive",
+      "description": "Asymmetric clipping overdrive based on the BOSS SD-1, warm and dynamic.",
+      "real_life_alternative": "BOSS SD-1",
+      "dsp": {
+        "mono": 5.78,
+        "stereo": 10.85,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 6.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistStuporOD"
+    },
+    {
+      "id": "sub_oct_fuzz",
+      "name": "Sub Oct Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "This is the Sub Oct Fuzz effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.5,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Sub",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the sub of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sub"
+        },
+        {
+          "name": "Treble",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4SubOctFuzz"
+    },
+    {
+      "id": "swedish_chainsaw",
+      "name": "Swedish Chainsaw",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "BOSS® HM-2 Heavy Metal",
+      "description": "Extreme distortion with scooped mids based on the BOSS HM-2 at full settings, the classic Swedish Death Metal tone.",
+      "real_life_alternative": "BOSS HM-2",
+      "dsp": {
+        "mono": 5.5,
+        "stereo": 10.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 6.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Treble",
+          "default": 7.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Level",
+          "default": 6.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistSwedishChainsaw"
+    },
+    {
+      "id": "teemah",
+      "name": "Teemah!",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Paul Cochrane Tim/Timmy Overdrive",
+      "description": "Transparent overdrive based on the Paul Cochrane Timmy, delivering smooth breakup and musical clipping.",
+      "real_life_alternative": "Paul Cochrane Timmy",
+      "dsp": {
+        "mono": 5.55,
+        "stereo": 10.25,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 5.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Bass Cut",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the bass cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Treble Cut",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the treble cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Clipping",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the clipping of the effect.",
+          "visible_when": null,
+          "hlx_key": "Clipping"
+        },
+        {
+          "name": "Level",
+          "default": 6.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistTeemah"
+    },
+    {
+      "id": "thrifter_fuzz",
+      "name": "Thrifter Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": null,
+      "description": "This is the Thrifter Fuzz effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 9.0,
+        "stereo": 17.05,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 8.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Attack",
+          "default": 3.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Notch Freq",
+          "default": 1600.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 200.0,
+          "max": 2500.0,
+          "step": 0.1,
+          "description": "Controls the notch freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "Notch Freq"
+        },
+        {
+          "name": "Notch Gain",
+          "default": -3.4,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the notch gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "Notch Gain"
+        },
+        {
+          "name": "Thick",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the thick of the effect.",
+          "visible_when": null,
+          "hlx_key": "Thick"
+        },
+        {
+          "name": "Level",
+          "default": 5.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistThrifterFuzz"
+    },
+    {
+      "id": "tone_sovereign",
+      "name": "Tone Sovereign",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "Analogman® King of Tone",
+      "description": "Dual-stage overdrive based on the Analogman King of Tone, from clean boost to crunchy overdrive.",
+      "real_life_alternative": "Analogman King of Tone",
+      "dsp": {
+        "mono": 15.0,
+        "stereo": 28.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain 1",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the gain 1 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Gain 1"
+        },
+        {
+          "name": "Tone 1",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the tone 1 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone 1"
+        },
+        {
+          "name": "Presence 1",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the presence 1 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Presence 1"
+        },
+        {
+          "name": "Clipping 1",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the clipping 1 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Clipping 1"
+        },
+        {
+          "name": "Gain Mod 1",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1"
+          ],
+          "description": "Controls the gain mod 1 of the effect.",
+          "visible_when": null,
+          "hlx_key": "GainMod 1"
+        },
+        {
+          "name": "Level 1",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the level 1 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level 1"
+        },
+        {
+          "name": "Gain 2",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the gain 2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Gain 2"
+        },
+        {
+          "name": "Tone 2",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the tone 2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone 2"
+        },
+        {
+          "name": "Presence 2",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the presence 2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Presence 2"
+        },
+        {
+          "name": "Clipping 2",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the clipping 2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Clipping 2"
+        },
+        {
+          "name": "Gain Mod 2",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1"
+          ],
+          "description": "Controls the gain mod 2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "GainMod 2"
+        },
+        {
+          "name": "Level 2",
+          "default": 6.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the level 2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level 2"
+        },
+        {
+          "name": "Voltage",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the voltage of the effect.",
+          "visible_when": null,
+          "hlx_key": "Voltage"
+        }
+      ],
+      "symbolicID": "HD2_DistToneSovereign"
+    },
+    {
+      "id": "top_secret_od",
+      "name": "Top Secret OD",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Overdrive",
+      "based_on": "DOD® OD-250",
+      "description": "Smooth overdrive based on the DOD OD-250, a vintage overdrive with warm character.",
+      "real_life_alternative": "DOD OD-250",
+      "dsp": {
+        "mono": 4.6,
+        "stereo": 8.28,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 6.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Level",
+          "default": 8.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistTopSecretOD"
+    },
+    {
+      "id": "triangle_fuzz",
+      "name": "Triangle Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": "Electro-Harmonix® Big Muff Pi® (Triangle)",
+      "description": "Vintage Big Muff Pi fuzz with the triangle circuit, offering long sustain and smooth clipping.",
+      "real_life_alternative": "Electro-Harmonix Big Muff Pi",
+      "dsp": {
+        "mono": 7.5,
+        "stereo": 14.09,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sustain",
+          "default": 8.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sustain or hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sustain"
+        },
+        {
+          "name": "Tone",
+          "default": 5.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 8.1,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistTriangleFuzz"
+    },
+    {
+      "id": "tube_drive",
+      "name": "Tube Drive",
+      "category": "Distortion",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Drive",
+      "based_on": null,
+      "description": "This is the Tube Drive effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Mid",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the mid of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid"
+        },
+        {
+          "name": "Treble",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        }
+      ],
+      "symbolicID": "HD2_DM4TubeDrive"
+    },
+    {
+      "id": "tycoctavia_fuzz",
+      "name": "Tycoctavia Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": "Tycobrahe Octavia",
+      "description": "Octave-up fuzz based on the Tycobrahe Octavia, produces a buzzy fuzz with an octave harmonic.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 5.11,
+        "stereo": 9.43,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Fuzz",
+          "default": 7.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the fuzz of the effect.",
+          "visible_when": null,
+          "hlx_key": "Fuzz"
+        },
+        {
+          "name": "Level",
+          "default": 6.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistTycoctaviaFuzz"
+    },
+    {
+      "id": "valve_driver",
+      "name": "Valve Driver",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Drive",
+      "based_on": "Ibanez® Tube Screamer®",
+      "description": "Tube Screamer-style midrange overdrive that adds warmth and pushes amp breakup.",
+      "real_life_alternative": "Ibanez Tube Screamer TS-808",
+      "dsp": {
+        "mono": 9.53,
+        "stereo": 18.28,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 6.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Bass",
+          "default": 5.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Treble",
+          "default": 4.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Level",
+          "default": 6.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistValveDriver"
+    },
+    {
+      "id": "vermin_dist",
+      "name": "Vermin Dist",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": "ProCo® Rat Distortion",
+      "description": "Classic Rat-style distortion with adjustable Filter control, from vintage crunch to modern metal.",
+      "real_life_alternative": "ProCo Rat",
+      "dsp": {
+        "mono": 4.49,
+        "stereo": 8.09,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 6.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Filter",
+          "default": 6.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the filter of the effect.",
+          "visible_when": null,
+          "hlx_key": "Filter"
+        },
+        {
+          "name": "Level",
+          "default": 8.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistVerminDist"
+    },
+    {
+      "id": "vital_boost",
+      "name": "Vital Boost",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Boost",
+      "based_on": null,
+      "description": "Line 6 Original transparent clean boost for driving amp inputs or adding presence to the mix.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 5.5,
+        "stereo": 9.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Boost",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the boost of the effect.",
+          "visible_when": null,
+          "hlx_key": "Boost"
+        }
+      ],
+      "symbolicID": "HD2_DistVitalBoost"
+    },
+    {
+      "id": "vital_dist",
+      "name": "Vital Dist",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Distortion",
+      "based_on": null,
+      "description": "Line 6 Original versatile distortion covering a wide range from mild crunch to aggressive clipping.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 15.5,
+        "stereo": 30.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Filter",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the filter of the effect.",
+          "visible_when": null,
+          "hlx_key": "Filter"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Clipping",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the clipping of the effect.",
+          "visible_when": null,
+          "hlx_key": "Clipping"
+        },
+        {
+          "name": "Octave",
+          "default": 4.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the octave of the effect.",
+          "visible_when": null,
+          "hlx_key": "Octave"
+        }
+      ],
+      "symbolicID": "HD2_DistVitalDist"
+    },
+    {
+      "id": "wringer_fuzz",
+      "name": "Wringer Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": "BOSS® FZ-2 Hyper Fuzz",
+      "description": "Thick, aggressive fuzz with scooped mids based on the BOSS FZ-2.",
+      "real_life_alternative": "BOSS FZ-2",
+      "dsp": {
+        "mono": 11.82,
+        "stereo": 18.43,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Treble",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Bass",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Fuzz Type",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1"
+          ],
+          "description": "Controls the fuzz type of the effect.",
+          "visible_when": null,
+          "hlx_key": "FuzzType"
+        }
+      ],
+      "symbolicID": "HD2_DistWringerFuzz"
+    },
+    {
+      "id": "xenomorph_fuzz",
+      "name": "Xenomorph Fuzz",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Fuzz",
+      "based_on": "Musitronics Mu-Tron Phasor II circuit",
+      "description": "Aggressive synth fuzz with modulated character, great for experimental tones.",
+      "real_life_alternative": "Z.Vex Fuzz Factory",
+      "dsp": {
+        "mono": 10.0,
+        "stereo": 18.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 8.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Shapes the tonal balance of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tone"
+        },
+        {
+          "name": "Level",
+          "default": 5.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Clipping",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1"
+          ],
+          "description": "Controls the clipping of the effect.",
+          "visible_when": null,
+          "hlx_key": "Clipping"
+        },
+        {
+          "name": "Osc Level",
+          "default": 6.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the osc level of the effect.",
+          "visible_when": null,
+          "hlx_key": "OscLevel"
+        },
+        {
+          "name": "Osc Tone",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the osc tone of the effect.",
+          "visible_when": null,
+          "hlx_key": "OscTone"
+        },
+        {
+          "name": "Min Freq",
+          "default": 55.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 6000.0,
+          "step": 0.1,
+          "description": "Controls the min freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "MinFreq"
+        },
+        {
+          "name": "Max Freq",
+          "default": 880.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 6000.0,
+          "step": 0.1,
+          "description": "Controls the max freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "MaxFreq"
+        },
+        {
+          "name": "WavShape",
+          "default": 2,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the wavshape of the effect.",
+          "visible_when": null,
+          "hlx_key": "WaveShape"
+        },
+        {
+          "name": "Sensitivity",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sensitivity of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sensitivity"
+        }
+      ],
+      "symbolicID": "HD2_DistXenomorphFuzz"
+    },
+    {
+      "id": "zeroamp_bass_di",
+      "name": "ZeroAmp Bass DI",
+      "category": "Distortion",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Bass Overdrive",
+      "based_on": null,
+      "description": "Line 6 Original bass DI and overdrive combining clean DI signal with adjustable overdrive blend.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 7.0,
+        "stereo": 12.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 6.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 5.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Treble",
+          "default": 3.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Presence",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Boosts or cuts high-frequency presence in the signal.",
+          "visible_when": null,
+          "hlx_key": "Presence"
+        },
+        {
+          "name": "Blend",
+          "default": 4.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Mixes the effect with the original signal.",
+          "visible_when": null,
+          "hlx_key": "Blend"
+        },
+        {
+          "name": "Level",
+          "default": 4.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DistZeroAmpBassDI"
+    }
+  ]
+}

@@ -1,0 +1,2207 @@
+{
+  "catalog_version": "1.0.0",
+  "firmware_version": "3.80",
+  "last_updated": "2026-03-22",
+  "dsp_disclaimer": "DSP usage percentages are based on the Helix firmware 3.80 specification. Actual values may vary based on model complexity and effect parameters. Mono and stereo modes have different DSP loads.",
+  "blocks": [
+    {
+      "id": "asheville_pattrn",
+      "name": "Asheville Pattrn",
+      "category": "Filter",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Asheville Pattrn effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 9.25,
+        "stereo": 12.75,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Rate",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Rate"
+        },
+        {
+          "name": "Pattern",
+          "default": 4,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"
+          ],
+          "description": "Controls the pattern of the effect.",
+          "visible_when": null,
+          "hlx_key": "Pattern"
+        },
+        {
+          "name": "Envelope",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the envelope of the effect.",
+          "visible_when": null,
+          "hlx_key": "Envelope"
+        },
+        {
+          "name": "Voice",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the voice of the effect.",
+          "visible_when": null,
+          "hlx_key": "Voice"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Output",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        },
+        {
+          "name": "Drive",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Direction",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the direction of the effect.",
+          "visible_when": null,
+          "hlx_key": "Direction"
+        },
+        {
+          "name": "LFO",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the lfo of the effect.",
+          "visible_when": null,
+          "hlx_key": "LFO"
+        },
+        {
+          "name": "Spread",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the spread of the effect.",
+          "visible_when": null,
+          "hlx_key": "Spread"
+        },
+        {
+          "name": "Level1",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the level1 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level1"
+        },
+        {
+          "name": "Level2",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the level2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level2"
+        },
+        {
+          "name": "Level3",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the level3 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level3"
+        },
+        {
+          "name": "Level4",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the level4 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level4"
+        },
+        {
+          "name": "Level5",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the level5 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level5"
+        },
+        {
+          "name": "Level6",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the level6 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level6"
+        },
+        {
+          "name": "Level7",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the level7 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level7"
+        },
+        {
+          "name": "Level8",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the level8 of the effect.",
+          "visible_when": null,
+          "hlx_key": "Level8"
+        },
+        {
+          "name": "Note Sync",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1/2",
+            "Dotted 1/4",
+            "1/4",
+            "Dotted 1/8",
+            "1/8",
+            "Dotted 1/16",
+            "1/16",
+            "Dotted 1/32",
+            "1/32",
+            "1/64",
+            "1/128",
+            "Triplet 1/2",
+            "Triplet 1/4",
+            "Triplet 1/8",
+            "Triplet 1/16",
+            "Triplet 1/32",
+            "3/4 Note",
+            "2/3 Note",
+            "1/3 Note"
+          ],
+          "description": "Controls the note sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "SyncSelect1"
+        },
+        {
+          "name": "Tempo Sync",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the tempo sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "TempoSync1"
+        },
+        {
+          "name": "Note Sync 2",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1/2",
+            "Dotted 1/4",
+            "1/4",
+            "Dotted 1/8",
+            "1/8",
+            "Dotted 1/16",
+            "1/16",
+            "Dotted 1/32",
+            "1/32",
+            "1/64",
+            "1/128",
+            "Triplet 1/2",
+            "Triplet 1/4",
+            "Triplet 1/8",
+            "Triplet 1/16",
+            "Triplet 1/32",
+            "3/4 Note",
+            "2/3 Note",
+            "1/3 Note"
+          ],
+          "description": "Controls the note sync 2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "SyncSelect2"
+        },
+        {
+          "name": "Tempo Sync 2",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the tempo sync 2 of the effect.",
+          "visible_when": null,
+          "hlx_key": "TempoSync2"
+        }
+      ],
+      "symbolicID": "HD2_FilterAshevillePattrn"
+    },
+    {
+      "id": "auto_filter",
+      "name": "Auto Filter",
+      "category": "Filter",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Auto Filter effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 2.8,
+        "stereo": 4.25,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Mode",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the mode of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mode"
+        },
+        {
+          "name": "Filter Gain",
+          "default": 18.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 36.0,
+          "step": 0.1,
+          "description": "Controls the filter gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "FilterGain"
+        },
+        {
+          "name": "Filter Q",
+          "default": 7.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 1.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the filter q of the effect.",
+          "visible_when": null,
+          "hlx_key": "FilterQ"
+        },
+        {
+          "name": "Sensitivity",
+          "default": 4.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sensitivity of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sens"
+        },
+        {
+          "name": "Attack",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Decay",
+          "default": 0.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 3.0,
+          "step": 0.1,
+          "description": "Controls how long the reverb tail sustains before fading to silence.",
+          "visible_when": null,
+          "hlx_key": "Decay"
+        },
+        {
+          "name": "Frequency",
+          "default": 50.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 1000.0,
+          "step": 0.1,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Frequency"
+        },
+        {
+          "name": "Freq Depth",
+          "default": 3500.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10000.0,
+          "step": 0.1,
+          "description": "Controls the freq depth of the effect.",
+          "visible_when": null,
+          "hlx_key": "FreqDepth"
+        },
+        {
+          "name": "Direction",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the direction of the effect.",
+          "visible_when": null,
+          "hlx_key": "Direction"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_FilterAutoFilter"
+    },
+    {
+      "id": "comet_trails",
+      "name": "Comet Trails",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Comet Trails effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 7.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Speed",
+          "default": 3.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Speed"
+        },
+        {
+          "name": "Frequency",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Note Sync",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1/2",
+            "Dotted 1/4",
+            "1/4",
+            "Dotted 1/8",
+            "1/8",
+            "Dotted 1/16",
+            "1/16",
+            "Dotted 1/32",
+            "1/32",
+            "1/64",
+            "1/128",
+            "Triplet 1/2",
+            "Triplet 1/4",
+            "Triplet 1/8",
+            "Triplet 1/16",
+            "Triplet 1/32",
+            "3/4 Note",
+            "2/3 Note",
+            "1/3 Note"
+          ],
+          "description": "Controls the note sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "SyncSelect1"
+        },
+        {
+          "name": "Tempo Sync",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the tempo sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "TempoSync1"
+        }
+      ],
+      "symbolicID": "HD2_FM4CometTrails"
+    },
+    {
+      "id": "mutant_filter",
+      "name": "Mutant Filter",
+      "category": "Filter",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Mutant Filter effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.79,
+        "stereo": 2.63,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Mode",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the mode of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mode"
+        },
+        {
+          "name": "Peak",
+          "default": 8.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the peak of the effect.",
+          "visible_when": null,
+          "hlx_key": "Peak"
+        },
+        {
+          "name": "Gain",
+          "default": 1.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Range",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the range of the effect.",
+          "visible_when": null,
+          "hlx_key": "Range"
+        },
+        {
+          "name": "Drive",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_FilterMutantFilter"
+    },
+    {
+      "id": "mystery_filter",
+      "name": "Mystery Filter",
+      "category": "Filter",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Mystery Filter effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.81,
+        "stereo": 2.61,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sensitivity",
+          "default": 5.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sensitivity of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sensitivity"
+        },
+        {
+          "name": "Frequency",
+          "default": 8.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Frequency"
+        },
+        {
+          "name": "Resonance",
+          "default": 8.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the peak resonance around the frequency center.",
+          "visible_when": null,
+          "hlx_key": "Resonance"
+        },
+        {
+          "name": "Attack",
+          "default": 1.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Release",
+          "default": 9.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect returns to normal after the signal drops.",
+          "visible_when": null,
+          "hlx_key": "Release"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": -1.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_FilterMysterFilter"
+    },
+    {
+      "id": "obi_wah",
+      "name": "Obi Wah",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Obi Wah effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.5,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Speed",
+          "default": 6.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Speed"
+        },
+        {
+          "name": "Frequency",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Type",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the type of the effect.",
+          "visible_when": null,
+          "hlx_key": "Type"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Note Sync",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1/2",
+            "Dotted 1/4",
+            "1/4",
+            "Dotted 1/8",
+            "1/8",
+            "Dotted 1/16",
+            "1/16",
+            "Dotted 1/32",
+            "1/32",
+            "1/64",
+            "1/128",
+            "Triplet 1/2",
+            "Triplet 1/4",
+            "Triplet 1/8",
+            "Triplet 1/16",
+            "Triplet 1/32",
+            "3/4 Note",
+            "2/3 Note",
+            "1/3 Note"
+          ],
+          "description": "Controls the note sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "SyncSelect1"
+        },
+        {
+          "name": "Tempo Sync",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the tempo sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "TempoSync1"
+        }
+      ],
+      "symbolicID": "HD2_FM4ObiWah"
+    },
+    {
+      "id": "q_filter",
+      "name": "Q Filter",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Q Filter effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Frequency",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Gain",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Type",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the type of the effect.",
+          "visible_when": null,
+          "hlx_key": "Type"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_FM4QFilter"
+    },
+    {
+      "id": "seeker",
+      "name": "Seeker",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Seeker effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Speed",
+          "default": 5.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Speed"
+        },
+        {
+          "name": "Frequency",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Steps",
+          "default": 8,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "description": "Controls the steps of the effect.",
+          "visible_when": null,
+          "hlx_key": "Steps"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Note Sync",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1/2",
+            "Dotted 1/4",
+            "1/4",
+            "Dotted 1/8",
+            "1/8",
+            "Dotted 1/16",
+            "1/16",
+            "Dotted 1/32",
+            "1/32",
+            "1/64",
+            "1/128",
+            "Triplet 1/2",
+            "Triplet 1/4",
+            "Triplet 1/8",
+            "Triplet 1/16",
+            "Triplet 1/32",
+            "3/4 Note",
+            "2/3 Note",
+            "1/3 Note"
+          ],
+          "description": "Controls the note sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "SyncSelect1"
+        },
+        {
+          "name": "Tempo Sync",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the tempo sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "TempoSync1"
+        }
+      ],
+      "symbolicID": "HD2_FM4Seeker"
+    },
+    {
+      "id": "slow_filter",
+      "name": "Slow Filter",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Slow Filter effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.75,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Frequency",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Speed",
+          "default": 7.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Speed"
+        },
+        {
+          "name": "Mode",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the mode of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mode"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_FM4SlowFilter"
+    },
+    {
+      "id": "spin_cycle",
+      "name": "Spin Cycle",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Spin Cycle effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 5.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Speed",
+          "default": 1.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Speed"
+        },
+        {
+          "name": "Frequency",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Vol Sens",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the vol sens of the effect.",
+          "visible_when": null,
+          "hlx_key": "Vol Sens"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Note Sync",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1/2",
+            "Dotted 1/4",
+            "1/4",
+            "Dotted 1/8",
+            "1/8",
+            "Dotted 1/16",
+            "1/16",
+            "Dotted 1/32",
+            "1/32",
+            "1/64",
+            "1/128",
+            "Triplet 1/2",
+            "Triplet 1/4",
+            "Triplet 1/8",
+            "Triplet 1/16",
+            "Triplet 1/32",
+            "3/4 Note",
+            "2/3 Note",
+            "1/3 Note"
+          ],
+          "description": "Controls the note sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "SyncSelect1"
+        },
+        {
+          "name": "Tempo Sync",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the tempo sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "TempoSync1"
+        }
+      ],
+      "symbolicID": "HD2_FM4SpinCycle"
+    },
+    {
+      "id": "throbber",
+      "name": "Throbber",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Throbber effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.75,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Speed",
+          "default": 4.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Speed"
+        },
+        {
+          "name": "Frequency",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Wave",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "description": "Controls the wave of the effect.",
+          "visible_when": null,
+          "hlx_key": "Wave"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Note Sync",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1/2",
+            "Dotted 1/4",
+            "1/4",
+            "Dotted 1/8",
+            "1/8",
+            "Dotted 1/16",
+            "1/16",
+            "Dotted 1/32",
+            "1/32",
+            "1/64",
+            "1/128",
+            "Triplet 1/2",
+            "Triplet 1/4",
+            "Triplet 1/8",
+            "Triplet 1/16",
+            "Triplet 1/32",
+            "3/4 Note",
+            "2/3 Note",
+            "1/3 Note"
+          ],
+          "description": "Controls the note sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "SyncSelect1"
+        },
+        {
+          "name": "Tempo Sync",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the tempo sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "TempoSync1"
+        }
+      ],
+      "symbolicID": "HD2_FM4Throbber"
+    },
+    {
+      "id": "tron_down",
+      "name": "Tron Down",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Tron Down effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.6,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Frequency",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Range",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the range of the effect.",
+          "visible_when": null,
+          "hlx_key": "Range"
+        },
+        {
+          "name": "Type",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the type of the effect.",
+          "visible_when": null,
+          "hlx_key": "Type"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_FM4TronDown"
+    },
+    {
+      "id": "tron_up",
+      "name": "Tron Up",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Tron Up effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.6,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Frequency",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Sets the center frequency of the filter or effect.",
+          "visible_when": null,
+          "hlx_key": "Freq"
+        },
+        {
+          "name": "Q",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the q of the effect.",
+          "visible_when": null,
+          "hlx_key": "Q"
+        },
+        {
+          "name": "Range",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the range of the effect.",
+          "visible_when": null,
+          "hlx_key": "Range"
+        },
+        {
+          "name": "Type",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the type of the effect.",
+          "visible_when": null,
+          "hlx_key": "Type"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_FM4TronUp"
+    },
+    {
+      "id": "v_tron",
+      "name": "V Tron",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the V Tron effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Speed",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Speed"
+        },
+        {
+          "name": "Start",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "description": "Controls the start of the effect.",
+          "visible_when": null,
+          "hlx_key": "Start"
+        },
+        {
+          "name": "End",
+          "default": 4,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "description": "Controls the end of the effect.",
+          "visible_when": null,
+          "hlx_key": "End"
+        },
+        {
+          "name": "Mode",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the mode of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mode"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_FM4VTron"
+    },
+    {
+      "id": "voice_box",
+      "name": "Voice Box",
+      "category": "Filter",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Voice Box effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Speed",
+          "default": 3.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the speed of the modulation effect.",
+          "visible_when": null,
+          "hlx_key": "Speed"
+        },
+        {
+          "name": "Start",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "description": "Controls the start of the effect.",
+          "visible_when": null,
+          "hlx_key": "Start"
+        },
+        {
+          "name": "End",
+          "default": 2,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "description": "Controls the end of the effect.",
+          "visible_when": null,
+          "hlx_key": "End"
+        },
+        {
+          "name": "Auto",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "description": "Controls the auto of the effect.",
+          "visible_when": null,
+          "hlx_key": "Auto"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Note Sync",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "1/2",
+            "Dotted 1/4",
+            "1/4",
+            "Dotted 1/8",
+            "1/8",
+            "Dotted 1/16",
+            "1/16",
+            "Dotted 1/32",
+            "1/32",
+            "1/64",
+            "1/128",
+            "Triplet 1/2",
+            "Triplet 1/4",
+            "Triplet 1/8",
+            "Triplet 1/16",
+            "Triplet 1/32",
+            "3/4 Note",
+            "2/3 Note",
+            "1/3 Note"
+          ],
+          "description": "Controls the note sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "SyncSelect1"
+        },
+        {
+          "name": "Tempo Sync",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the tempo sync of the effect.",
+          "visible_when": null,
+          "hlx_key": "TempoSync1"
+        }
+      ],
+      "symbolicID": "HD2_FM4VoiceBox"
+    }
+  ]
+}

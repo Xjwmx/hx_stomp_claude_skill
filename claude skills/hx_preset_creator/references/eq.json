@@ -1,0 +1,806 @@
+{
+  "catalog_version": "1.0.0",
+  "firmware_version": "3.80",
+  "last_updated": "2026-03-22",
+  "dsp_disclaimer": "DSP usage percentages are based on the Helix firmware 3.80 specification. Actual values may vary based on model complexity and effect parameters. Mono and stereo modes have different DSP loads.",
+  "blocks": [
+    {
+      "id": "10_band_graphic",
+      "name": "10 Band Graphic",
+      "category": "EQ",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Graphic EQ",
+      "based_on": null,
+      "description": "This is the 10 Band Graphic effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.82,
+        "stereo": 2.66,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "31.25Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 31.25hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "31p25Hz"
+        },
+        {
+          "name": "62.5Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 62.5hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "62p5Hz"
+        },
+        {
+          "name": "125Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 125hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "125Hz"
+        },
+        {
+          "name": "250Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 250hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "250Hz"
+        },
+        {
+          "name": "500Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 500hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "500Hz"
+        },
+        {
+          "name": "1kHz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 1khz of the effect.",
+          "visible_when": null,
+          "hlx_key": "1kHz"
+        },
+        {
+          "name": "2kHz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 2khz of the effect.",
+          "visible_when": null,
+          "hlx_key": "2kHz"
+        },
+        {
+          "name": "4kHz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 4khz of the effect.",
+          "visible_when": null,
+          "hlx_key": "4kHz"
+        },
+        {
+          "name": "8kHz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 8khz of the effect.",
+          "visible_when": null,
+          "hlx_key": "8kHz"
+        },
+        {
+          "name": "16kHz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the 16khz of the effect.",
+          "visible_when": null,
+          "hlx_key": "16kHz"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_EQGraphic10Band"
+    },
+    {
+      "id": "acoustic_sim",
+      "name": "Acoustic Sim",
+      "category": "EQ",
+      "hx_subcategory": "Stereo",
+      "subcategory": "EQ",
+      "based_on": null,
+      "description": "This is the Acoustic Sim effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 7.0,
+        "stereo": 12.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Mode",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "description": "Controls the mode of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mode"
+        },
+        {
+          "name": "Body",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the body of the effect.",
+          "visible_when": null,
+          "hlx_key": "Body"
+        },
+        {
+          "name": "Top",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the top of the effect.",
+          "visible_when": null,
+          "hlx_key": "Top"
+        },
+        {
+          "name": "Shimmer",
+          "default": 2.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the shimmer of the effect.",
+          "visible_when": null,
+          "hlx_key": "Shimmer"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "L6SPB_AcousGtrSim"
+    },
+    {
+      "id": "cali_q_graphic",
+      "name": "Cali Q Graphic",
+      "category": "EQ",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Graphic EQ",
+      "based_on": null,
+      "description": "This is the Cali Q Graphic effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 2.13,
+        "stereo": 2.99,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "80Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -13.8,
+          "max": 13.2,
+          "step": 0.1,
+          "description": "Controls the 80hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "80Hz"
+        },
+        {
+          "name": "240Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -13.3,
+          "max": 13.2,
+          "step": 0.1,
+          "description": "Controls the 240hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "240Hz"
+        },
+        {
+          "name": "750Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -13.3,
+          "max": 13.2,
+          "step": 0.1,
+          "description": "Controls the 750hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "750Hz"
+        },
+        {
+          "name": "2200Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -9.6,
+          "max": 9.6,
+          "step": 0.1,
+          "description": "Controls the 2200hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "2200Hz"
+        },
+        {
+          "name": "6600Hz",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -9.6,
+          "max": 9.6,
+          "step": 0.1,
+          "description": "Controls the 6600hz of the effect.",
+          "visible_when": null,
+          "hlx_key": "6600Hz"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_CaliQ"
+    },
+    {
+      "id": "low_and_high_cut",
+      "name": "Low and High Cut",
+      "category": "EQ",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Filter",
+      "based_on": null,
+      "description": "This is the Low and High Cut effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 2.17,
+        "stereo": 2.71,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Low Cut",
+          "default": 19.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 19.9,
+          "max": 1000.0,
+          "step": 0.1,
+          "description": "Controls the low cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowCut"
+        },
+        {
+          "name": "High Cut",
+          "default": 20100.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 1000.0,
+          "max": 20100.0,
+          "step": 0.1,
+          "description": "Controls the high cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighCut"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_EQLowCutHighCut"
+    },
+    {
+      "id": "low_high_shelf",
+      "name": "Low/High Shelf",
+      "category": "EQ",
+      "hx_subcategory": "Stereo",
+      "subcategory": "EQ",
+      "based_on": null,
+      "description": "This is the Low/High Shelf effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 2.0,
+        "stereo": 2.25,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Low Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the low gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowGain"
+        },
+        {
+          "name": "Low Freq",
+          "default": 300.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 2000.0,
+          "step": 0.1,
+          "description": "Controls the low freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowFreq"
+        },
+        {
+          "name": "High Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the high gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighGain"
+        },
+        {
+          "name": "High Freq",
+          "default": 3000.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 400.0,
+          "max": 15000.0,
+          "step": 0.1,
+          "description": "Controls the high freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighFreq"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_EQLowShelfHighShelf"
+    },
+    {
+      "id": "parametric",
+      "name": "Parametric",
+      "category": "EQ",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Parametric EQ",
+      "based_on": null,
+      "description": "This is the Parametric effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 2.44,
+        "stereo": 2.52,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Low Freq",
+          "default": 110.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 495.0,
+          "step": 0.1,
+          "description": "Controls the low freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowFreq"
+        },
+        {
+          "name": "Low Q",
+          "default": 0.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the low q of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowQ"
+        },
+        {
+          "name": "Low Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the low gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowGain"
+        },
+        {
+          "name": "Mid Freq",
+          "default": 2000.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 125.0,
+          "max": 8000.0,
+          "step": 0.1,
+          "description": "Sets the center frequency for the mid-range EQ control.",
+          "visible_when": null,
+          "hlx_key": "MidFreq"
+        },
+        {
+          "name": "Mid Q",
+          "default": 0.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the mid q of the effect.",
+          "visible_when": null,
+          "hlx_key": "MidQ"
+        },
+        {
+          "name": "Mid Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the mid gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "MidGain"
+        },
+        {
+          "name": "High Freq",
+          "default": 8000.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 500.0,
+          "max": 18000.0,
+          "step": 0.1,
+          "description": "Controls the high freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighFreq"
+        },
+        {
+          "name": "High Q",
+          "default": 0.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the high q of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighQ"
+        },
+        {
+          "name": "High Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the high gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighGain"
+        },
+        {
+          "name": "Low Cut",
+          "default": 19.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 19.9,
+          "max": 1000.0,
+          "step": 0.1,
+          "description": "Controls the low cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowCut"
+        },
+        {
+          "name": "High Cut",
+          "default": 20100.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 1000.0,
+          "max": 20100.0,
+          "step": 0.1,
+          "description": "Controls the high cut of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighCut"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_EQParametric"
+    },
+    {
+      "id": "simple_eq",
+      "name": "Simple EQ",
+      "category": "EQ",
+      "hx_subcategory": "Stereo",
+      "subcategory": "EQ",
+      "based_on": null,
+      "description": "This is the Simple EQ effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.28,
+        "stereo": 1.63,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Low Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the low gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "LowGain"
+        },
+        {
+          "name": "Mid Freq",
+          "default": 600.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 125.0,
+          "max": 4000.0,
+          "step": 0.1,
+          "description": "Sets the center frequency for the mid-range EQ control.",
+          "visible_when": null,
+          "hlx_key": "MidFreq"
+        },
+        {
+          "name": "Mid Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the mid gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "MidGain"
+        },
+        {
+          "name": "High Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the high gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "HighGain"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_EQSimple3Band"
+    },
+    {
+      "id": "simple_tilt",
+      "name": "Simple Tilt",
+      "category": "EQ",
+      "hx_subcategory": "Stereo",
+      "subcategory": "EQ",
+      "based_on": null,
+      "description": "This is the Simple Tilt effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 2.0,
+        "stereo": 2.25,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Tilt",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the tilt of the effect.",
+          "visible_when": null,
+          "hlx_key": "Tilt"
+        },
+        {
+          "name": "Center Freq",
+          "default": 1000.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 100.0,
+          "max": 5000.0,
+          "step": 0.1,
+          "description": "Controls the center freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "CenterFreq"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_EQSimpleTilt"
+    }
+  ]
+}

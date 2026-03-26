@@ -1,0 +1,1756 @@
+{
+  "catalog_version": "1.0.0",
+  "firmware_version": "3.80",
+  "last_updated": "2026-03-22",
+  "dsp_disclaimer": "DSP usage percentages are based on the Helix firmware 3.80 specification. Actual values may vary based on model complexity and effect parameters. Mono and stereo modes have different DSP loads.",
+  "blocks": [
+    {
+      "id": "3_band_comp",
+      "name": "3-Band Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the 3-Band Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.0,
+        "stereo": 8.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Ratio",
+          "default": 2,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "description": "Controls the compression ratio or effect intensity.",
+          "visible_when": null,
+          "hlx_key": "Ratio"
+        },
+        {
+          "name": "Attack",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 0.2,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Release",
+          "default": 0.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 2.5,
+          "step": 0.1,
+          "description": "Controls how quickly the effect returns to normal after the signal drops.",
+          "visible_when": null,
+          "hlx_key": "Release"
+        },
+        {
+          "name": "Lo X Freq",
+          "default": 400.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 20.0,
+          "max": 1000.0,
+          "step": 0.1,
+          "description": "Controls the lo x freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "Lo X Freq"
+        },
+        {
+          "name": "Hi X Freq",
+          "default": 3000.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 1000.0,
+          "max": 20000.0,
+          "step": 0.1,
+          "description": "Controls the hi x freq of the effect.",
+          "visible_when": null,
+          "hlx_key": "Hi X Freq"
+        },
+        {
+          "name": "Level",
+          "default": 2.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Lo Thresh",
+          "default": -40.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the lo thresh of the effect.",
+          "visible_when": null,
+          "hlx_key": "Lo Thresh"
+        },
+        {
+          "name": "Lo Gain",
+          "default": 3.5,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the lo gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "Lo Gain"
+        },
+        {
+          "name": "Mid Thresh",
+          "default": -35.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the mid thresh of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid Thresh"
+        },
+        {
+          "name": "Mid Gain",
+          "default": 4.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the mid gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mid Gain"
+        },
+        {
+          "name": "Hi Thresh",
+          "default": -50.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the hi thresh of the effect.",
+          "visible_when": null,
+          "hlx_key": "Hi Thresh"
+        },
+        {
+          "name": "Hi Gain",
+          "default": -2.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the hi gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "Hi Gain"
+        },
+        {
+          "name": "Detector",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the detector of the effect.",
+          "visible_when": null,
+          "hlx_key": "Detector"
+        }
+      ],
+      "symbolicID": "HD2_Compressor3BandComp"
+    },
+    {
+      "id": "ampeg_opto_comp",
+      "name": "Ampeg Opto Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Ampeg Opto Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": 9.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Compression",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the compression of the effect.",
+          "visible_when": null,
+          "hlx_key": "Compression"
+        },
+        {
+          "name": "Release",
+          "default": 2.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect returns to normal after the signal drops.",
+          "visible_when": null,
+          "hlx_key": "Release"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Blend"
+        },
+        {
+          "name": "Level",
+          "default": 6.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_CompressorOptoComp"
+    },
+    {
+      "id": "autoswell",
+      "name": "Autoswell",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Dynamics",
+      "based_on": null,
+      "description": "This is the Autoswell effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.8,
+        "stereo": 2.15,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Threshold",
+          "default": -70.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the level at which the effect begins to act.",
+          "visible_when": null,
+          "hlx_key": "Threshold"
+        },
+        {
+          "name": "Rel Offset",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the rel offset of the effect.",
+          "visible_when": null,
+          "hlx_key": "Rel Offset"
+        },
+        {
+          "name": "Attack",
+          "default": 0.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 5.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Decay",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 5.0,
+          "step": 0.1,
+          "description": "Controls how long the reverb tail sustains before fading to silence.",
+          "visible_when": null,
+          "hlx_key": "Decay"
+        },
+        {
+          "name": "Taper",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the taper of the effect.",
+          "visible_when": null,
+          "hlx_key": "Taper"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_CompressorAutoSwell"
+    },
+    {
+      "id": "blue_comp",
+      "name": "Blue Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Blue Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sustain",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the sustain or hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sustain"
+        },
+        {
+          "name": "Level",
+          "default": 0.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DM4BlueComp"
+    },
+    {
+      "id": "blue_comp_treb",
+      "name": "Blue Comp Treb",
+      "category": "Dynamics",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Blue Comp Treb effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sustain",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the sustain or hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sustain"
+        },
+        {
+          "name": "Level",
+          "default": 0.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DM4BlueCompTreb"
+    },
+    {
+      "id": "boost_comp",
+      "name": "Boost Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Boost Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 6.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Drive",
+          "default": 0.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the amount of overdrive, distortion, or gain applied to the signal.",
+          "visible_when": null,
+          "hlx_key": "Drive"
+        },
+        {
+          "name": "Bass",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Adjusts the low-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Bass"
+        },
+        {
+          "name": "Compression",
+          "default": 0.3,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the compression of the effect.",
+          "visible_when": null,
+          "hlx_key": "Comp"
+        },
+        {
+          "name": "Treble",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Adjusts the high-frequency content of the signal.",
+          "visible_when": null,
+          "hlx_key": "Treble"
+        },
+        {
+          "name": "Output",
+          "default": 0.6,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Sets the output level of the effect.",
+          "visible_when": null,
+          "hlx_key": "Output"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DM4BoostComp"
+    },
+    {
+      "id": "deluxe_comp",
+      "name": "Deluxe Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Deluxe Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.75,
+        "stereo": 2.97,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Threshold",
+          "default": -37.1,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the level at which the effect begins to act.",
+          "visible_when": null,
+          "hlx_key": "Threshold"
+        },
+        {
+          "name": "Ratio",
+          "default": 3,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "description": "Controls the compression ratio or effect intensity.",
+          "visible_when": null,
+          "hlx_key": "Ratio"
+        },
+        {
+          "name": "Attack",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 0.2,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Release",
+          "default": 0.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 2.5,
+          "step": 0.1,
+          "description": "Controls how quickly the effect returns to normal after the signal drops.",
+          "visible_when": null,
+          "hlx_key": "Release"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 7.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Knee",
+          "default": 6.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the knee of the effect.",
+          "visible_when": null,
+          "hlx_key": "Knee"
+        }
+      ],
+      "symbolicID": "HD2_CompressorDeluxeComp"
+    },
+    {
+      "id": "feedbacker",
+      "name": "Feedbacker",
+      "category": "Dynamics",
+      "hx_subcategory": "Mono",
+      "subcategory": "Dynamics",
+      "based_on": null,
+      "description": "This is the Feedbacker effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 22.0,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Fdbk Gain",
+          "default": 7.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the fdbk gain of the effect.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Fdbk Type",
+          "default": 6,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "description": "Controls the fdbk type of the effect.",
+          "visible_when": null,
+          "hlx_key": "FeedbackType"
+        },
+        {
+          "name": "Attack",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 6.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Release",
+          "default": 0.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 6.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect returns to normal after the signal drops.",
+          "visible_when": null,
+          "hlx_key": "ReleaseTime"
+        },
+        {
+          "name": "Dry Kill",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1",
+            "2"
+          ],
+          "description": "Controls the dry kill of the effect.",
+          "visible_when": null,
+          "hlx_key": "DryCtrl"
+        },
+        {
+          "name": "Dry Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the dry level of the effect.",
+          "visible_when": null,
+          "hlx_key": "DryLevel"
+        },
+        {
+          "name": "Reference",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1"
+          ],
+          "description": "Controls the reference of the effect.",
+          "visible_when": null,
+          "hlx_key": "Reference"
+        },
+        {
+          "name": "Silence Thr",
+          "default": -100.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the silence thr of the effect.",
+          "visible_when": null,
+          "hlx_key": "SilenceThresh"
+        },
+        {
+          "name": "Onset Thr",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the onset thr of the effect.",
+          "visible_when": null,
+          "hlx_key": "OnsetThresh"
+        },
+        {
+          "name": "Offset Thr",
+          "default": -6.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the offset thr of the effect.",
+          "visible_when": null,
+          "hlx_key": "OffsetThresh"
+        },
+        {
+          "name": "Retrigger",
+          "default": 0,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1"
+          ],
+          "description": "Controls the retrigger of the effect.",
+          "visible_when": null,
+          "hlx_key": "Retrigger"
+        },
+        {
+          "name": "Trails",
+          "default": "On",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the trails of the effect.",
+          "visible_when": null,
+          "hlx_key": "Trails"
+        }
+      ],
+      "symbolicID": "VIC_FeedbackSim"
+    },
+    {
+      "id": "hard_gate",
+      "name": "Hard Gate",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Noise Gate",
+      "based_on": null,
+      "description": "This is the Hard Gate effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.16,
+        "stereo": 2.18,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Open Threshold",
+          "default": -50.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the open threshold of the effect.",
+          "visible_when": null,
+          "hlx_key": "OpenThreshold"
+        },
+        {
+          "name": "Close Threshold",
+          "default": -60.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the close threshold of the effect.",
+          "visible_when": null,
+          "hlx_key": "CloseThreshold"
+        },
+        {
+          "name": "Hold Time",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 0.8,
+          "step": 0.1,
+          "description": "Controls the hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "HoldTime"
+        },
+        {
+          "name": "Decay",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 4.0,
+          "step": 0.1,
+          "description": "Controls how long the reverb tail sustains before fading to silence.",
+          "visible_when": null,
+          "hlx_key": "Decay"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_GateHardGate"
+    },
+    {
+      "id": "horizon_gate",
+      "name": "Horizon Gate",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Noise Gate",
+      "based_on": null,
+      "description": "This is the Horizon Gate effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.0,
+        "stereo": 5.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Mode",
+          "default": 1,
+          "type": "enum",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "0",
+            "1"
+          ],
+          "description": "Controls the mode of the effect.",
+          "visible_when": null,
+          "hlx_key": "Mode"
+        },
+        {
+          "name": "Sensitivity",
+          "default": 8.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sensitivity of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sensitivity"
+        },
+        {
+          "name": "Gate Range",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the gate range of the effect.",
+          "visible_when": null,
+          "hlx_key": "Gate Range"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_GateHorizonGate"
+    },
+    {
+      "id": "kinky_comp",
+      "name": "Kinky Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Kinky Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 5.35,
+        "stereo": 10.1,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sensitivity",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sensitivity of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sensitivity"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Attack",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Release",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect returns to normal after the signal drops.",
+          "visible_when": null,
+          "hlx_key": "Release"
+        },
+        {
+          "name": "Level",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_CompressorKinkyComp"
+    },
+    {
+      "id": "la_studio_comp",
+      "name": "LA Studio Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the LA Studio Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 5.78,
+        "stereo": 10.8,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Peak Reduction",
+          "default": 7.8,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the peak reduction of the effect.",
+          "visible_when": null,
+          "hlx_key": "PeakReduction"
+        },
+        {
+          "name": "Gain",
+          "default": 6.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Type",
+          "default": "Off",
+          "type": "toggle",
+          "unit": null,
+          "min": null,
+          "max": null,
+          "step": null,
+          "options": [
+            "Off",
+            "On"
+          ],
+          "description": "Controls the type of the effect.",
+          "visible_when": null,
+          "hlx_key": "Type"
+        },
+        {
+          "name": "Emphasis",
+          "default": 0.9,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the emphasis of the effect.",
+          "visible_when": null,
+          "hlx_key": "Emphasis"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_CompressorLAStudioComp"
+    },
+    {
+      "id": "noise_gate",
+      "name": "Noise Gate",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Noise Gate",
+      "based_on": null,
+      "description": "This is the Noise Gate effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 1.5,
+        "stereo": 1.9,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Threshold",
+          "default": -48.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the level at which the effect begins to act.",
+          "visible_when": null,
+          "hlx_key": "Threshold"
+        },
+        {
+          "name": "Decay",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls how long the reverb tail sustains before fading to silence.",
+          "visible_when": null,
+          "hlx_key": "Decay"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_GateNoiseGate"
+    },
+    {
+      "id": "red_comp",
+      "name": "Red Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Red Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.4,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sustain",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the sustain or hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sustain"
+        },
+        {
+          "name": "Level",
+          "default": 0.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DM4RedComp"
+    },
+    {
+      "id": "red_squeeze",
+      "name": "Red Squeeze",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Dynamics",
+      "based_on": null,
+      "description": "This is the Red Squeeze effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 8.97,
+        "stereo": 12.23,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sensitivity",
+          "default": 4.4,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sensitivity of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sensitivity"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 5.4,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_CompressorRedSqueeze"
+    },
+    {
+      "id": "rochester_comp",
+      "name": "Rochester Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Rochester Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 4.5,
+        "stereo": 9.0,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Gain",
+          "default": 3.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -15.0,
+          "max": 15.0,
+          "step": 0.1,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Threshold",
+          "default": -24.0,
+          "type": "continuous",
+          "unit": null,
+          "min": -40.0,
+          "max": 22.0,
+          "step": 0.1,
+          "description": "Sets the level at which the effect begins to act.",
+          "visible_when": null,
+          "hlx_key": "Threshold"
+        },
+        {
+          "name": "Ratio",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 1.0,
+          "max": 40.0,
+          "step": 0.1,
+          "description": "Controls the compression ratio or effect intensity.",
+          "visible_when": null,
+          "hlx_key": "Ratio"
+        },
+        {
+          "name": "Attack",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 0.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Release",
+          "default": 0.1,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.1,
+          "max": 3.0,
+          "step": 0.1,
+          "description": "Controls how quickly the effect returns to normal after the signal drops.",
+          "visible_when": null,
+          "hlx_key": "Release"
+        },
+        {
+          "name": "Level",
+          "default": 10.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        },
+        {
+          "name": "Knee",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the knee of the effect.",
+          "visible_when": null,
+          "hlx_key": "Knee"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        }
+      ],
+      "symbolicID": "HD2_CompressorRochesterComp"
+    },
+    {
+      "id": "transient_shaper",
+      "name": "Transient Shaper",
+      "category": "Dynamics",
+      "hx_subcategory": "Stereo",
+      "subcategory": "Dynamics",
+      "based_on": null,
+      "description": "This is the Transient Shaper effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 21.5,
+        "stereo": 39.5,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono_or_stereo",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Attack",
+          "default": 6.96,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls how quickly the effect responds to incoming signal.",
+          "visible_when": null,
+          "hlx_key": "Attack"
+        },
+        {
+          "name": "Sustain",
+          "default": -6.24,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the sustain or hold time of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sustain"
+        },
+        {
+          "name": "Gain",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Controls the input gain or overdrive amount.",
+          "visible_when": null,
+          "hlx_key": "Gain"
+        },
+        {
+          "name": "Sensitivity",
+          "default": 5.0,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 10.0,
+          "step": 0.1,
+          "description": "Controls the sensitivity of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sensitivity"
+        },
+        {
+          "name": "Mix",
+          "default": 1.0,
+          "type": "continuous",
+          "unit": "%",
+          "min": 0.0,
+          "max": 100.0,
+          "step": 1.0,
+          "description": "Blends the dry (unprocessed) and wet (processed) signals.",
+          "visible_when": null,
+          "hlx_key": "Mix"
+        },
+        {
+          "name": "Level",
+          "default": 0.0,
+          "type": "continuous",
+          "unit": "dB",
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.01,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_CompressorTransientShaper"
+    },
+    {
+      "id": "tube_comp",
+      "name": "Tube Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Tube Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.3,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Threshold",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Sets the level at which the effect begins to act.",
+          "visible_when": null,
+          "hlx_key": "Thresh"
+        },
+        {
+          "name": "Level",
+          "default": 0.2,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DM4TubeComp"
+    },
+    {
+      "id": "vetta_comp",
+      "name": "Vetta Comp",
+      "category": "Dynamics",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Compressor",
+      "based_on": null,
+      "description": "This is the Vetta Comp effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.3,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Sensitivity",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the sensitivity of the effect.",
+          "visible_when": null,
+          "hlx_key": "Sens"
+        },
+        {
+          "name": "Level",
+          "default": 0.7,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DM4VettaComp"
+    },
+    {
+      "id": "vetta_juice",
+      "name": "Vetta Juice",
+      "category": "Dynamics",
+      "hx_subcategory": "Legacy",
+      "subcategory": "Dynamics",
+      "based_on": null,
+      "description": "This is the Vetta Juice effect block for the HX Stomp.",
+      "real_life_alternative": null,
+      "dsp": {
+        "mono": 3.3,
+        "stereo": null,
+        "confidence": "measured",
+        "notes": null
+      },
+      "io": {
+        "routing": "mono",
+        "inputs": 1,
+        "outputs": 1
+      },
+      "parameters": [
+        {
+          "name": "Amount",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Controls the intensity or amount of effect applied.",
+          "visible_when": null,
+          "hlx_key": "Amount"
+        },
+        {
+          "name": "Level",
+          "default": 0.5,
+          "type": "continuous",
+          "unit": null,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "Sets the overall output level of the block.",
+          "visible_when": null,
+          "hlx_key": "Level"
+        }
+      ],
+      "symbolicID": "HD2_DM4VettaJuice"
+    }
+  ]
+}

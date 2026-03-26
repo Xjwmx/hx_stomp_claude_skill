@@ -1,0 +1,11 @@
+# Line 6 proprietary files — obtain from your HX Edit installation
+project_references/hx_files/
+claude skills/hx_preset_creator/references/*.pdf
+
+# Test Conversations
+project_references/conversation_examples/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
