@@ -27,8 +27,8 @@ If preferences are fully populated, load them and carry them through every step.
 **Hard rules — do not break these:**
 - Do NOT infer or assume any answer from the user's preset request. Even if the user says "build me a bass preset", still ask Round 1 in full.
 - Do NOT skip or combine questions to save time.
-- Do NOT proceed to Step 1 until `/create-skill` has been called and preferences are confirmed written.
-- After Round 4, run this checklist before calling `/create-skill`. Every item must be confirmed:
+- Do NOT proceed to Step 1 until `/skill-creator` has been called and preferences are confirmed written.
+- After Round 4, run this checklist before calling `/skill-creator`. Every item must be confirmed:
   - [ ] Instrument make, model, and string count recorded
   - [ ] Pickup type and output level recorded
   - [ ] Signal chain type confirmed (one of the defined options)
@@ -201,9 +201,8 @@ Once all items are checked off:
 
 **2.** Ask the user to confirm the content is correct, then say:
 
-> "To save your preferences, please invoke the `/create-skill` command now. Once it confirms the file has been updated, let me know and we'll get straight to building your preset."
+> "To save your preferences, please invoke the `/skill-creator` command now. Once it confirms the file has been updated, let me know and we'll get straight to building your preset."
 
-**3.** Wait. Do not proceed to Step 1 until the user confirms `/create-skill` completed successfully.
 
 **4.** Once confirmed, say:
 > "Your setup is saved. What preset would you like to build?"

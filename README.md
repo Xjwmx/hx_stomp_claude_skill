@@ -45,7 +45,7 @@ Skills are managed under **Customization** in the Claude app sidebar.
 Either grab the latest `hx-preset-creator.zip` from the [Releases](../../releases) page, or build it yourself:
 
 ```bash
-git clone https://github.com/yourusername/hxstomp_dsp_automation.git
+git clone https://github.com/Xjwmx/hx_stomp_claude_skill
 cd hxstomp_dsp_automation
 python3 setup.py
 # → produces hx-preset-creator.zip
