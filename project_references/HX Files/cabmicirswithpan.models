@@ -1,0 +1,6108 @@
+[
+  {
+    "symbolicID": "HD2_CabMicIr_2x12JazzRivetWithPan",
+    "name": "2x12 Jazz Rivet",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.23,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.23
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x12MailC12QWithPan",
+    "name": "2x12 Mail C12Q",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.23,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.23
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x12MandarinWithPan",
+    "name": "2x12 Mandarin 30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.23,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 11
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.16
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 12000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x121960AT75WithPan",
+    "name": "4x12 1960A T75",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.32,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.32
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12BlackbackH30WithPan",
+    "name": "4x12 Blackback30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.32,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 3
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.32
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12BritV30WithPan",
+    "name": "4x12 Brit V30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.23,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 2
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.15
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 12000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12CaliV30WithPan",
+    "name": "4x12 Cali V30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.23,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 10
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.23
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12MandarinWithPan",
+    "name": "4x12 Mandarin EM",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.23,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 6
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.23
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 3.5
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12MOONT75WithPan",
+    "name": "4x12 MOO)))N T75",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.39,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 3
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.39
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.5
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 40.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 12000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12UberT75WithPan",
+    "name": "4x12 Uber T75",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.39,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.39
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12UberV30WithPan",
+    "name": "4x12 Uber V30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.23,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 10
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.27
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 12000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12XXLV30WithPan",
+    "name": "4x12 XXL V30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.23,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 6
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.27
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 40.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 12000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x12GrammaticoWithPan",
+    "name": "1x12 Grammatico",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.19,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 11
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.19
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 7.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x12BlueBellWithPan",
+    "name": "2x12 Blue Bell",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.24,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.55
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 90.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 15000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x12USDeluxeWithPan",
+    "name": "1x12 US Deluxe",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.19,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.19
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x12DoubleC12NWithPan",
+    "name": "2x12 Double C12N",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.16,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.16
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 80.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 8000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x10TweedP10RWithPan",
+    "name": "4x10 Tweed P10R",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.20,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 2
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.20
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12Greenback25WithPan",
+    "name": "4x12 Greenback 25",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.24,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.24
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x15BruteWithPan",
+    "name": "2x15 Brute",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.31,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICirBass",
+        "min": 0,
+        "max": 11,
+        "default": 6
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.09
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 4.25
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 25.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 11500.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_8x10SVTAVWithPan",
+    "name": "8x10 SVT AV",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.40,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICirBass",
+        "min": 0,
+        "max": 11,
+        "default": 3
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 5.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 37.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 8000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x10USPrincessWithPan",
+    "name": "1x10 US Princess",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.32,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 11
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.63
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 2.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x15AmpegB15WithPan",
+    "name": "1x15 Ampeg B-15",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.14,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICirBass",
+        "min": 0,
+        "max": 11,
+        "default": 10
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.75
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 9.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x10GardenWithPan",
+    "name": "4x10 Garden",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.49,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICirBass",
+        "min": 0,
+        "max": 11,
+        "default": 1
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 3.75
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x12CaliEXTWithPan",
+    "name": "1x12 Cali EXT",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.36,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03190100"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03190100"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.36
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 12000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+
+  {
+    "symbolicID": "HD2_CabMicIr_1x12BlueBellWithPan",
+    "name": "1x12 Blue Bell",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.24,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 11
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.36
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 80.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 10400.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x10AmpegProWithPan",
+    "name": "4x10 Ampeg Pro",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.49,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICirBass",
+        "min": 0,
+        "max": 11,
+        "default": 6
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.24
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 13800.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12Greenback20WithPan",
+    "name": "4x12 Greenback20",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.28,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 7
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.25
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 5.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x12EpicenterWithPan",
+    "name": "1x12 Epicenter",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.40,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICirBass",
+        "min": 0,
+        "max": 11,
+        "default": 6
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.35
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 6.25
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 40.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 14000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x12SilverBellWithPan",
+    "name": "2x12 Silver Bell",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.24,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 11
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.55
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.25
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 90.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 5000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x12MatchH30WithPan",
+    "name": "2x12 Match H30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.19,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.56
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 60.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 9000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x12MatchG25WithPan",
+    "name": "2x12 Match H30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.24,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.53
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.5
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 60.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 9000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x12OpenCastWithPan",
+    "name": "1x12 Open Cast",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.4,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 3
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.4
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 2.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x12OpenCreamWithPan",
+    "name": "1x12 Open Cream",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.28,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03590000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03590000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 3
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.28
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 2.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": 0.0,
+        "min_370": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12Greenback30WithPan",
+    "name": "4x12 Greenback30",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.28,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 3
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.4
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 2.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 11000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x12InterstateWithPan",
+    "name": "2x12 Interstate",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.19,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 3
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.19
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 11000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_SoupProEllipseWithPan",
+    "name": "Soup Pro Ellipse",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.28,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 10
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.28
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 5.5
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x12FullertonWithPan",
+    "name": "1x12 Fullerton",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.10,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 2
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.19
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 16000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x8SmallTweedWithPan",
+    "name": "1x8 Small Tweed",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.16,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 6
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.25
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 3.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 45.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 10000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_1x12CaliIVWithPan",
+    "name": "1x12 Cali IV",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.33,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 9
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.33
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 3.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 11500.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_2x15USDripmanWithPan",
+    "name": "2x15 US Dripman",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.26,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICirBass",
+        "min": 0,
+        "max": 11,
+        "default": 11
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.26
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 4.25
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_6x10CaliPowerWithPan",
+    "name": "6x10 Cali Power",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.55,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICirBass",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 3.25
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12WhoWatt100WithPan",
+    "name": "4x12 WhoWatt 100",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.33,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03690000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03690000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.1
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 10500.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x10USSuperWithPan",
+    "name": "4x10 US Super",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.25,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03790000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 10
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.25
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 5.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 74.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12SoloLeadEMWithPan",
+    "name": "4x12 SoloLead EM",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.24,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03790000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 11
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 40.0
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 12000.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12CartogGuvWithPan",
+    "name": "4x12 Cartog Guv",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.16,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03790000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "symbolicID": "HD2_CabMicIr_4x12CartogC90WithPan",
+    "name": "4x12 Cartog C90",
+    "category": 19,
+    "load": 2.5,
+    "capEdge": 0.33,
+    "devices": [
+      {
+        "id": 2162944,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162945,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162693,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162699,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162694,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162689,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162690,
+        "version": "0x03790000"
+      },
+      {
+        "id": 2162692,
+        "version": "0x03790000"
+      }
+    ],
+    "params": [
+      {
+        "symbolicID": "Mic",
+        "name": "Mic",
+        "valueType": 0,
+        "displayType": "cabMICir",
+        "min": 0,
+        "max": 11,
+        "default": 0
+      },
+      {
+        "symbolicID": "Position",
+        "name": "Position",
+        "valueType": 1,
+        "displayType": "CabMicIr_Position",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Distance",
+        "name": "Distance",
+        "valueType": 1,
+        "displayType": "cab_mic_distance",
+        "min": 1.0,
+        "max": 12.0,
+        "default": 1.0
+      },
+      {
+        "symbolicID": "Angle",
+        "name": "Angle",
+        "valueType": 1,
+        "displayType": "CabMicIrs_Angle",
+        "min": 0.0,
+        "max": 45.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "LowCut",
+        "name": "Low Cut",
+        "valueType": 1,
+        "displayType": "cab_low_cut",
+        "min": 19.9,
+        "max": 500.0,
+        "default": 19.9
+      },
+      {
+        "symbolicID": "HighCut",
+        "name": "High Cut",
+        "valueType": 1,
+        "displayType": "cab_high_cut",
+        "min": 500.0,
+        "max": 20100.0,
+        "default": 20100.0
+      },
+      {
+        "symbolicID": "Level",
+        "name": "Level",
+        "valueType": 1,
+        "displayType": "volume",
+        "min": -60.0,
+        "max": 6.0,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "Pan",
+        "name": "Pan",
+        "valueType": 1,
+        "displayType": "pan",
+        "min": 0.0,
+        "max": 1.0,
+        "default": 0.5
+      },
+      {
+        "symbolicID": "Delay",
+        "name": "Delay",
+        "valueType": 1,
+        "displayType": "dualCab_time_ms_withauto",
+        "min": -0.00002,
+        "max": 0.05,
+        "default": 0.0
+      },
+      {
+        "symbolicID": "@enabled",
+        "name": "Enabled",
+        "valueType": 2,
+        "min": false,
+        "max": true,
+        "default": true
+      }
+    ]
+  }
+]

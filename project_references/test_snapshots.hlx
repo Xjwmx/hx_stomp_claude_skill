@@ -1,0 +1,166 @@
+{
+  "data": {
+    "device": 2162694,
+    "device_version": 58720256,
+    "meta": {
+      "application": "HX Edit",
+      "appversion": 58851328,
+      "build_sha": "v3.80-0-g0000000",
+      "modifieddate": 1743638400,
+      "name": "SNAP DEMO"
+    },
+    "tone": {
+      "dsp0": {
+        "inputA": {
+          "@input": 1,
+          "@model": "HelixStomp_AppDSPFlowInput",
+          "decay": 0.5,
+          "noiseGate": false,
+          "threshold": -48.0
+        },
+        "outputA": {
+          "@model": "HelixStomp_AppDSPFlowOutputMain",
+          "@output": 1,
+          "gain": 0.0,
+          "pan": 0.5
+        },
+        "block0": {
+          "@enabled": true,
+          "@model": "HD2_CompressorDeluxeComp",
+          "@no_snapshot_bypass": false,
+          "@path": 0,
+          "@position": 0,
+          "@stereo": false,
+          "@type": 0,
+          "Attack": 0.038,
+          "Knee": 6.0,
+          "Level": 7.0,
+          "Mix": 1.0,
+          "Ratio": 3,
+          "Release": 0.2,
+          "Threshold": -30.0
+        },
+        "block1": {
+          "@enabled": true,
+          "@model": "HD2_DistTopSecretOD",
+          "@no_snapshot_bypass": false,
+          "@path": 0,
+          "@position": 1,
+          "@stereo": false,
+          "@type": 0,
+          "Gain": 0.4,
+          "Level": 0.7
+        }
+      },
+      "dsp1": {},
+      "global": {
+        "@current_snapshot": 0,
+        "@guitarinputZ": 0,
+        "@model": "@global_params",
+        "@pedalstate": 0,
+        "@tempo": 120.0,
+        "@topology0": "A",
+        "@topology1": 0
+      },
+      "controller": {
+        "dsp0": {
+          "block0": {
+            "Threshold": {
+              "@controller": 9,
+              "@max": -10.0,
+              "@min": -50.0,
+              "@snapshot_disable": false
+            }
+          },
+          "block1": {
+            "Gain": {
+              "@controller": 9,
+              "@max": 1.0,
+              "@min": 0.0,
+              "@snapshot_disable": false
+            }
+          }
+        }
+      },
+      "snapshot0": {
+        "@custom_name": true,
+        "@ledcolor": 0,
+        "@name": "CLEAN",
+        "@pedalstate": 0,
+        "@tempo": 120.0,
+        "@valid": true,
+        "blocks": {
+          "dsp0": {
+            "block0": true,
+            "block1": false
+          }
+        },
+        "controllers": {
+          "dsp0": {
+            "block0": {
+              "Threshold": { "@fs_enabled": false, "@value": -50.0 }
+            },
+            "block1": {
+              "Gain": { "@fs_enabled": false, "@value": 0.0 }
+            }
+          }
+        }
+      },
+      "snapshot1": {
+        "@custom_name": true,
+        "@ledcolor": 0,
+        "@name": "CRUNCH",
+        "@pedalstate": 0,
+        "@tempo": 120.0,
+        "@valid": true,
+        "blocks": {
+          "dsp0": {
+            "block0": true,
+            "block1": true
+          }
+        },
+        "controllers": {
+          "dsp0": {
+            "block0": {
+              "Threshold": { "@fs_enabled": false, "@value": -30.0 }
+            },
+            "block1": {
+              "Gain": { "@fs_enabled": false, "@value": 0.4 }
+            }
+          }
+        }
+      },
+      "snapshot2": {
+        "@custom_name": true,
+        "@ledcolor": 0,
+        "@name": "LEAD",
+        "@pedalstate": 0,
+        "@tempo": 120.0,
+        "@valid": true,
+        "blocks": {
+          "dsp0": {
+            "block0": true,
+            "block1": true
+          }
+        },
+        "controllers": {
+          "dsp0": {
+            "block0": {
+              "Threshold": { "@fs_enabled": false, "@value": -20.0 }
+            },
+            "block1": {
+              "Gain": { "@fs_enabled": false, "@value": 0.8 }
+            }
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "original": 0,
+    "pbn": 0,
+    "premium": 0
+  },
+  "schema": "L6Preset",
+  "version": 6
+}
