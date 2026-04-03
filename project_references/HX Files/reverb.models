@@ -1,0 +1,2808 @@
+[
+  {
+    "symbolicID" : "HD2_ReverbPlate",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Plate",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.015
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 90.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 5600.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.33
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbRoom",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Room",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.4
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.011
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 150.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 3700.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.38
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbHall",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Hall",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.68
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.022
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 166.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 2800.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.38
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbCave",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Cave",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.47
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.05
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 130.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 5400.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_Reverb63Spring",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "'63 Spring",
+    "category" : 10,
+    "load_stereo": 13.38,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.56
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 87.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 5000.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.38
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbOcto",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Octo",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.72
+      },
+      {
+        "symbolicID" : "Intensity",
+        "name" : "Intensity",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.63
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 122.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 86.0,
+        "max" : 20100.0,
+        "default" : 9760.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbChamber",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Chamber",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.49
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.03
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 93.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 6600.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbDucking",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Ducking",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.59
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 165.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 6100.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbTile",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Tile",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.52
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.02
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 138.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 9800.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.44
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbEcho",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Echo",
+    "category" : 10,
+    "load_stereo": 7.93,             
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.38
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.06
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 143.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 5000.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.35
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbSpring",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Spring",
+    "category" : 10,
+    "load_stereo": 13.50,
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.34
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 19.9
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 4100.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.4
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbParticle",
+    "mono" : false,
+    "stereo" : true,
+    "name" : "Particle Verb",
+    "category" : 10,
+    "load_stereo": 10.36,             
+    "params" : [
+      {
+        "symbolicID" : "Dwell",
+        "name" : "Dwell",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.35
+      },
+      {
+        "symbolicID" : "Condition",
+        "name" : "Condition",
+        "valueType" : 0,
+        "displayType" : "condition",
+        "min" : 0,
+        "max" : 2,
+        "default" : 0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 1.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbDoubleTank",
+    "mono" : true,
+    "stereo" : true,
+    "name" : "Double Tank",
+    "load" : 13.75,
+    "load_stereo" : 14.25,
+    "category" : 10,
+    "devices": [ { "id":2162944 },
+                 { "id":2162945 },
+                 { "id":2162693 },
+                 { "id": 2162699 },
+                 { "id":2162694 },
+                 { "id":2162689, "version":"0x02300100" },
+                 { "id":2162690, "version":"0x02300100" },
+                 { "id":2162692, "version":"0x02300100" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.43
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "Rate",
+        "name" : "Rate",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.25
+      },
+      {
+        "symbolicID" : "Modulation",
+        "name" : "Modulation",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.40
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.3
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 169.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 6000.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbGlitz",
+    "mono" : true,
+    "stereo" : true,
+    "name" : "Glitz",
+    "load" : 8.50,
+    "load_stereo" : 10.25,
+    "category" : 10,
+    "devices": [ { "id":2162944 },
+                 { "id":2162945 },
+                 { "id":2162693 },
+                 { "id": 2162699 },
+                 { "id":2162694 },
+                 { "id":2162689, "version":"0x02300100" },
+                 { "id":2162690, "version":"0x02300100" },
+                 { "id":2162692, "version":"0x02300100" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.47
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.001,
+        "max" : 0.2,
+        "default" : 0.01
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 118
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 8000.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.19
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "Delay",
+        "name" : "Delay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.001,
+        "max" : 0.2,
+        "default" : 0.044
+      },
+      {
+        "symbolicID" : "Rate",
+        "name" : "Rate",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 0.1,
+        "max" : 8.0,
+        "default" : 1.838
+      },
+      {
+        "symbolicID" : "Depth",
+        "name" : "Depth",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.384
+      },
+      {
+        "symbolicID" : "Xover",
+        "name" : "Xover",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 100.0,
+        "max" : 10000.0,
+        "default" : 866.0
+      },
+      {
+        "symbolicID" : "Mod Mix",
+        "name" : "Mod Mix",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.35
+      },
+      {
+        "symbolicID" : "SyncSelect1",
+        "name" : "Note Sync",
+        "valueType" : 0,
+        "displayType" : "sync_note",
+        "min" : 1,
+        "max" : 19,
+        "default" : 6
+      },
+      {
+        "symbolicID" : "TempoSync1",
+        "name" : "Tempo Sync",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbGanymede",
+    "mono" : true,
+    "stereo" : true,
+    "name" : "Ganymede",
+    "load" : 7.50,
+    "load_stereo" : 13.25,
+    "category" : 10,
+    "devices": [ { "id":2162944 },
+                 { "id":2162945 },
+                 { "id":2162693 },
+                 { "id": 2162699 },
+                 { "id":2162694 },
+                 { "id":2162689, "version":"0x02300100" },
+                 { "id":2162690, "version":"0x02300100" },
+                 { "id":2162692, "version":"0x02300100" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.65
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.04
+      },
+      {
+        "symbolicID" : "Tone",
+        "name" : "Tone",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.72
+      },
+      {
+        "symbolicID" : "Modulation",
+        "name" : "Modulation",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.7
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.35
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbSearchlights",
+    "mono" : true,
+    "stereo" : true,
+    "name" : "Searchlights",
+    "load" : 12.50,
+    "load_stereo" : 13.00,
+    "category" : 10,
+    "devices": [ { "id":2162944 },
+                 { "id":2162945 },
+                 { "id":2162693 },
+                 { "id": 2162699 },
+                 { "id":2162694 },
+                 { "id":2162689, "version":"0x02300100" },
+                 { "id":2162690, "version":"0x02300100" },
+                 { "id":2162692, "version":"0x02300100" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.07
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 196.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 6500.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.29
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "Modulation",
+        "name" : "Modulation",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.3
+      },
+      {
+        "symbolicID" : "Speed",
+        "name" : "Speed",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.1,
+        "max" : 1.0,
+        "default" : 0.37
+      },
+      {
+        "symbolicID" : "Intensity",
+        "name" : "Intensity",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.63
+      },
+      {
+        "symbolicID" : "Spread",
+        "name" : "Spread",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 1.0,
+        "stereo-only" : true
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbPlateaux",
+    "mono" : true,
+    "stereo" : true,
+    "name" : "Plateaux",
+    "load" : 10.00,
+    "load_stereo" : 12.50,
+    "category" : 10,
+    "devices": [ { "id":2162944 },
+                 { "id":2162945 },
+                 { "id":2162693 },
+                 { "id": 2162699 },
+                 { "id":2162694 },
+                 { "id":2162689, "version":"0x02300100" },
+                 { "id":2162690, "version":"0x02300100" },
+                 { "id":2162692, "version":"0x02300100" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.47
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms_reverb",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "Tone",
+        "name" : "Tone",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.3
+      },
+      {
+        "symbolicID" : "Modulation",
+        "name" : "Modulation",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.33
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "Pitch1",
+        "name" : "Pitch 1",
+        "valueType" : 0,
+        "displayType" : "pitch",
+        "min" : -24,
+        "max" : 24,
+        "default" : -12
+      },
+      {
+        "symbolicID" : "Cents1",
+        "name" : "Cents 1",
+        "valueType" : 1,
+        "displayType" : "cents",
+        "min" : -50.0,
+        "max" : 50.0,
+        "default" : -0.8
+      },
+      {
+        "symbolicID" : "Pitch2",
+        "name" : "Pitch 2",
+        "valueType" : 0,
+        "displayType" : "pitch",
+        "min" : -24,
+        "max" : 24,
+        "default" : 7
+      },
+      {
+        "symbolicID" : "Cents2",
+        "name" : "Cents 2",
+        "valueType" : 1,
+        "displayType" : "cents",
+        "min" : -50.0,
+        "max" : 50.0,
+        "default" : 0.4
+      },
+      {
+        "symbolicID" : "PitchMix",
+        "name" : "Pitch Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.24
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbHxSpring",
+    "mono" : true,
+    "stereo" : true,
+    "name" : "Hot Springs",
+    "load" : 16.00,
+    "load_stereo" : 16.00,
+    "category" : 10,
+    "devices": [ { "id":2162944 },
+                 { "id":2162945 },
+                 { "id":2162693, "version":"0x03070000" },
+                 { "id": 2162699, "version":"0x03070000" },
+                 { "id":2162694, "version":"0x03070000" },
+                 { "id":2162689, "version":"0x03070000" },
+                 { "id":2162690, "version":"0x03070000" },
+                 { "id":2162692, "version":"0x03070000" } ],
+    "params" : [
+      {
+        "symbolicID" : "Dwell",
+        "name" : "Dwell",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.40
+      },
+      {
+        "symbolicID" : "Spring Count",
+        "name" : "Spring Count",
+        "valueType" : 1,
+        "displayType" : "tenths_no_units",
+        "min" : 1.0,
+        "max" : 3.0,
+        "default" : 2.0
+      },
+      {
+        "symbolicID" : "Drip",
+        "name" : "Drip",
+        "valueType" : 0,
+        "displayType" : "lo_med_high",
+        "min" : 0,
+        "max" : 2,
+        "default" : 1
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "LowCut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 200.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "HighCut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 5000.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.37
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "VIC_ReverbRotating",
+    "mono" : true,
+    "stereo" : true,
+    "name" : "Dynamic Hall",
+    "load" : 14.50,
+    "load_stereo" : 14.50,
+    "category" : 10,
+    "devices": [ { "id":2162944 },
+                 { "id":2162945 },
+                 { "id":2162693, "version":"0x03070000" },
+                 { "id": 2162699, "version":"0x03070000" },
+                 { "id":2162694, "version":"0x03070000" },
+                 { "id":2162689, "version":"0x03070000" },
+                 { "id":2162690, "version":"0x03070000" },
+                 { "id":2162692, "version":"0x03070000" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "time_sec_DynamicHall",
+        "min" : 0.1,
+        "max" : 45.1,
+        "default" : 4.0
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.05
+      },
+      {
+        "symbolicID" : "RoomSize",
+        "name" : "RoomSize",
+        "valueType" : 0,
+        "displayType" : "room_size",
+        "min" : 0,
+        "max" : 2,
+        "default" : 1
+      },
+      {
+        "symbolicID" : "Diffusion",
+        "name" : "Diffusion",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.7
+      },
+      {
+        "symbolicID" : "Damping",
+        "name" : "Damping",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 500.0,
+        "max" : 20000.0,
+        "default" : 3720.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.39
+      },
+      {
+        "symbolicID" : "Motion",
+        "name" : "Motion",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.29
+      },
+      {
+        "symbolicID" : "BassFreq",
+        "name" : "BassFreq",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 20.0,
+        "max" : 500.0,
+        "default" : 100.0
+      },
+      {
+        "symbolicID" : "BassBoost",
+        "name" : "BassBoost",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -15.0,
+        "max" : 3.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "LowCut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 1000.0,
+        "default" : 117.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "HighCut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 6300.0
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID": "VIC_DynPlate",
+    "mono": true,
+    "stereo" : true,
+    "name": "Dynamic Plate",
+    "load": 16.5,
+    "load_stereo" : 16.5,
+    "category" : 10,
+    "devices": [ { "id":2162944, "version":"0x03110100" },
+                 { "id":2162945, "version":"0x03110100" },
+                 { "id":2162693, "version":"0x03110100" },
+                 { "id":2162699, "version":"0x03110100" },
+                 { "id":2162694, "version":"0x03110100" },
+                 { "id":2162689, "version":"0x03110100" },
+                 { "id":2162690, "version":"0x03110100" },
+                 { "id":2162692, "version":"0x03110100" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "time_sec_DynamicHall",
+        "min" : 0.1,
+        "max" : 45.1,
+        "default" : 2.0
+      },
+      {
+        "symbolicID" : "PreDelay",
+        "name" : "PreDelay",
+        "valueType" : 1,
+        "displayType" : "time_ms",
+        "min" : 0.0,
+        "max" : 0.1,
+        "default" : 0.01
+      },
+      {
+        "symbolicID" : "Damping",
+        "name" : "Damping",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 500.0,
+        "max" : 20000.0,
+        "default" : 3720.0
+      },
+      {
+        "symbolicID" : "MatrFreq",
+        "name" : "Mot Rate",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.33
+      },
+      {
+        "symbolicID" : "VarDelayAmpl",
+        "name" : "MotRng",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.6
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.25
+      },
+      {
+        "symbolicID" : "BassFreq",
+        "name" : "Low Freq",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 20.0,
+        "max" : 500.0,
+        "default" : 100.0
+      },
+      {
+        "symbolicID" : "BassBoost",
+        "name" : "Low Gain",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -15.0,
+        "max" : 3.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 1000.0,
+        "default" : 100.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 1000.0,
+        "max" : 20100.0,
+        "default" : 10000.0
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      }
+    ]
+  },
+  {
+    "symbolicID": "VIC_ReverbDynRoom",
+    "mono": true,
+    "stereo" : true,
+    "name": "Dynamic Room",
+    "load": 15.5,
+    "load_stereo" : 15.5,
+    "category" : 10,
+    "devices": [ { "id":2162944, "version":"0x03110100" },
+                 { "id":2162945, "version":"0x03110100" },
+                 { "id":2162693, "version":"0x03110100" },
+                 { "id":2162699, "version":"0x03110100" },
+                 { "id":2162694, "version":"0x03110100" },
+                 { "id":2162689, "version":"0x03110100" },
+                 { "id":2162690, "version":"0x03110100" },
+                 { "id":2162692, "version":"0x03110100" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "time_sec",
+        "min" : 0.1,
+        "max" : 3.0,
+        "default" : 1.2
+      },
+      {
+        "symbolicID" : "PreDelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms",
+        "min" : 0.0,
+        "max" : 0.1,
+        "default" : 0.01
+      },
+      {
+        "symbolicID" : "Damping",
+        "name" : "Damping",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 500.0,
+        "max" : 20000.0,
+        "default" : 3720
+      },
+      {
+        "symbolicID" : "Diffusion",
+        "name" : "Diffusion",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "MatrFreq",
+        "name" : "Mot Rate",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.333
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.3
+      },
+      {
+        "symbolicID" : "BassFreq",
+        "name" : "Low Freq",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 20.0,
+        "max" : 500.0,
+        "default" : 100.0
+      },
+      {
+        "symbolicID" : "BassBoost",
+        "name" : "BassBoost",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -15.0,
+        "max" : 3.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 1000.0,
+        "default" : 100.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 1000.0,
+        "max" : 20100.0,
+        "default" : 10000.0
+      },
+      {
+        "symbolicID" : "ERLevel",
+        "name" : "ERLevel",
+        "valueType" : 1,
+        "displayType" : "generic_knob_1to1",
+        "min" : 0.0,
+        "max" : 2.0,
+        "default" : 0.8
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      }
+    ]
+  },
+  {
+    "symbolicID" : "VIC_ReverbShimmer",
+    "mono": true,
+    "stereo" : true,
+    "name": "Shimmer",
+    "load": 18.0,
+    "load_stereo" : 18.0,
+    "category" : 10,
+    "devices": [ { "id":2162944, "version":"0x03110100" },
+                 { "id":2162945, "version":"0x03110100" },
+                 { "id":2162693, "version":"0x03110100" },
+                 { "id":2162699, "version":"0x03110100" },
+                 { "id":2162694, "version":"0x03110100" },
+                 { "id":2162689, "version":"0x03110100" },
+                 { "id":2162690, "version":"0x03110100" },
+                 { "id":2162692, "version":"0x03110100" } ],
+    "params" : [
+      {
+        "symbolicID" : "Mode",
+        "name" : "Type",
+        "valueType" : 2,
+        "displayType" : "Shimmer_Mode",
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "Shift1",
+        "name" : "Pitch 1",
+        "valueType" : 1,
+        "displayType" : "Shimmer_shift_OctaveStep",
+        "min" : -12.0,
+        "max" : 12.0,
+        "default" : 12.0
+      },
+      {
+        "symbolicID" : "Shift2",
+        "name" : "Pitch 2",
+        "valueType" : 1,
+        "displayType" : "Shimmer_shift_OctaveStep",
+        "min" : -12.0,
+        "max" : 12.0,
+        "default" : 7.0
+      },
+      {
+        "symbolicID" : "Intensity",
+        "name" : "Intensity",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.9
+      },
+      {
+        "symbolicID" : "Feedback",
+        "name" : "Feedback",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.9
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.39
+      },
+      {
+        "symbolicID" : "Balance",
+        "name" : "Pitch Blend",
+        "valueType" : 1,
+        "displayType" : "Shimmer_pitchblend",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "time_sec_DynamicHall",
+        "min" : 0.1,
+        "max" : 45.1,
+        "default" : 4.0
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms",
+        "min" : 0.0,
+        "max" : 0.2,
+        "default" : 0.15
+      },
+      {
+        "symbolicID" : "RoomSize",
+        "name" : "Room Size",
+        "valueType" : 0,
+        "displayType" : "room_size",
+        "min" : 0,
+        "max" : 2,
+        "default" : 2
+      },
+      {
+        "symbolicID" : "Damping",
+        "name" : "Damping",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 500.0,
+        "max" : 20000.0,
+        "default" : 5000
+      },
+      {
+        "symbolicID" : "Diffusion",
+        "name" : "Diffusion",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.7
+      },
+      {
+        "symbolicID" : "Motion",
+        "name" : "Motion",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.3
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 1000.0,
+        "default" : 120.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 6300.0
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "VIC_ReverbDynAmbience",
+    "mono": true,
+    "stereo" : true,
+    "name": "Dynamic Ambience",
+    "load": 10.0,
+    "load_stereo" : 10.5,
+    "category" : 10,
+    "devices": [ { "id":2162944, "version":"0x03190100" },
+                 { "id":2162945, "version":"0x03190100" },
+                 { "id":2162693, "version":"0x03190100" },
+                 { "id":2162699, "version":"0x03190100" },
+                 { "id":2162694, "version":"0x03190100" },
+                 { "id":2162689, "version":"0x03190100" },
+                 { "id":2162690, "version":"0x03190100" },
+                 { "id":2162692, "version":"0x03190100" } ],
+    "params" : [
+      {
+        "symbolicID" : "RoomSize",
+        "name" : "Room Size",
+        "valueType" : 0,
+        "displayType" : "dynamicAmbience_room_size",
+        "min" : 0,
+        "max" : 2,
+        "default" : 0
+      },
+      {
+        "symbolicID" : "PreDelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "time_ms",
+        "min" : 0.0,
+        "max" : 0.05,
+        "default" : 0.005
+      },
+      {
+        "symbolicID" : "Damping",
+        "name" : "Damping",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 500.0,
+        "max" : 20000.0,
+        "default" : 5000
+      },
+      {
+        "symbolicID" : "Diffusion",
+        "name" : "Diffusion",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "EarlyLateBlend",
+        "name" : "Shape",
+        "valueType" : 1,
+        "displayType" : "dynamic_ambience_shape",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "Low Cut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 1000.0,
+        "default" : 100.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "High Cut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 1000.0,
+        "max" : 20100.0,
+        "default" : 10000.0
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "VIC_ReverbDynBloom",
+    "mono": true,
+    "stereo" : true,
+    "name": "Dynamic Bloom",
+    "load": 21.0,
+    "load_stereo" : 21.0,
+    "category" : 10,
+    "devices": [ { "id":2162944, "version":"0x03690000" },
+                 { "id":2162945, "version":"0x03690000" },
+                 { "id":2162693, "version":"0x03690000" },
+                 { "id":2162699, "version":"0x03690000" },
+                 { "id":2162694, "version":"0x03690000" },
+                 { "id":2162689, "version":"0x03690000" },
+                 { "id":2162690, "version":"0x03690000" },
+                 { "id":2162692, "version":"0x03690000" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "time_sec_DynamicHall",
+        "min" : 0.1,
+        "max" : 45.1,
+        "default" : 2.0
+      },
+      {
+        "symbolicID" : "Damping",
+        "name" : "Damping",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 500.0,
+        "max" : 20000.0,
+        "default" : 3720.0
+      },
+      {
+        "symbolicID" : "MatrFreq",
+        "name" : "Mot Rate",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.2
+      },
+      {
+        "symbolicID" : "RiseTime",
+        "name" : "Rise Time",
+        "valueType" : 0,
+        "displayType" : "rise_time",
+        "min" : 0,
+        "max" : 2,
+        "default" : 1
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.4
+      },
+      {
+        "symbolicID" : "BassFreq",
+        "name" : "BassFreq",
+        "valueType" : 1,
+        "displayType" : "frequency",
+        "min" : 20.0,
+        "max" : 500.0,
+        "default" : 100.0
+      },
+      {
+        "symbolicID" : "BassBoost",
+        "name" : "BassBoost",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -15.0,
+        "max" : 3.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "LowCut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 1000.0,
+        "default" : 100.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "HighCut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 1000.0,
+        "max" : 20100.0,
+        "default" : 10000.0
+      },
+      {
+        "symbolicID" : "DuckingAmount",
+        "name" : "Ducking",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.2
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  },
+  {
+    "symbolicID" : "HD2_ReverbNonLinear",
+    "mono": true,
+    "stereo" : true,
+    "name": "Nonlinear",
+    "load": 23.0,
+    "load_stereo" : 25.5,
+    "category" : 10,
+    "devices": [ { "id":2162944, "version":"0x03690000" },
+                 { "id":2162945, "version":"0x03690000" },
+                 { "id":2162693, "version":"0x03690000" },
+                 { "id":2162699, "version":"0x03690000" },
+                 { "id":2162694, "version":"0x03690000" },
+                 { "id":2162689, "version":"0x03690000" },
+                 { "id":2162690, "version":"0x03690000" },
+                 { "id":2162692, "version":"0x03690000" } ],
+    "params" : [
+      {
+        "symbolicID" : "Decay",
+        "name" : "Decay",
+        "valueType" : 1,
+        "displayType" : "feedbacker_time_ms",
+        "min" : 0.05,
+        "max" : 2.0,
+        "default" : 1.0
+      },
+      {
+        "symbolicID" : "Predelay",
+        "name" : "Predelay",
+        "valueType" : 1,
+        "displayType" : "feedbacker_time_ms",
+        "min" : 0.0,
+        "max" : 0.5,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "Shape",
+        "name" : "Shape",
+        "valueType" : 0,
+        "displayType" : "nonlinear_shape",
+        "min" : 0,
+        "max" : 7,
+        "default" : 1
+      },
+      {
+        "symbolicID" : "Late Dry",
+        "name" : "Late Dry",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "Mix",
+        "name" : "Mix",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Level",
+        "name" : "Level",
+        "valueType" : 1,
+        "displayType" : "volume",
+        "min" : -60.0,
+        "max" : 6.0,
+        "default" : 0.0
+      },
+      {
+        "symbolicID" : "Diffusion",
+        "name" : "Diffusion",
+        "valueType" : 1,
+        "displayType" : "percent",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.88
+      },
+      {
+        "symbolicID" : "LowCut",
+        "name" : "LowCut",
+        "valueType" : 1,
+        "displayType" : "mod_low_cut",
+        "min" : 19.9,
+        "max" : 500.0,
+        "default" : 80.0
+      },
+      {
+        "symbolicID" : "HighCut",
+        "name" : "HighCut",
+        "valueType" : 1,
+        "displayType" : "mod_high_cut",
+        "min" : 500.0,
+        "max" : 20100.0,
+        "default" : 8600.0
+      },
+      {
+        "symbolicID" : "Mod",
+        "name" : "Mod",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.5
+      },
+      {
+        "symbolicID" : "Rate",
+        "name" : "Rate",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "default" : 0.066
+      },
+      {
+        "symbolicID" : "Spread",
+        "name" : "Spread",
+        "valueType" : 1,
+        "displayType" : "generic_knob",
+        "min" : 0.0,
+        "max" : 1.0,
+        "stereo-only": true,
+        "default" : 1.0
+      },
+      {
+        "symbolicID" : "TempoSync1",
+        "name" : "Tempo Sync",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "SyncSelect1",
+        "name" : "Note Sync",
+        "valueType" : 0,
+        "displayType" : "sync_note",
+        "min" : 1,
+        "max" : 19,
+        "default" : 6
+      },
+      {
+        "symbolicID" : "TempoSync2",
+        "name" : "Tempo Sync",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "SyncSelect2",
+        "name" : "Note Sync",
+        "valueType" : 0,
+        "displayType" : "sync_note",
+        "min" : 1,
+        "max" : 19,
+        "default" : 6
+      },
+      {
+        "symbolicID" : "@enabled",
+        "name" : "Enabled",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : true
+      },
+      {
+        "symbolicID" : "@trails",
+        "name" : "Trails",
+        "valueType" : 2,
+        "displayType" : "off_on",
+        "min" : false,
+        "max" : true,
+        "default" : false
+      },
+      {
+        "symbolicID" : "@stereo",
+        "name" : "Stereo",
+        "valueType" : 2,
+        "min" : false,
+        "max" : true,
+        "default" : false
+      }
+    ]
+  }
+]

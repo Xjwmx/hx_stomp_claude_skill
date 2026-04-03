@@ -1,0 +1,556 @@
+{
+  "assign":{
+    "clearQ":"Are you sure you want to clear all assignments?\n\n(NOTE: this action cannot be undone.)",
+    "menu":{
+      "clear_asn":"Clear Assignment",
+      "clear_asns":"Clear All Assignments...",
+      "learn":"Disable MIDI Learn"
+    },
+    "table":{
+      "block":"Block",
+      "param":"Parameter",
+      "source":"Source"
+    },
+    "err":{
+      "ss_bypass":"Failed to set snapshot bypass.",
+      "bypass":"Failed to add or remove MIDI Bypass assignment.",
+      "clear_b":"Failed to clear bypass assignment.",
+      "clear_c":"Failed to clear controller assignment.",
+      "clear_a":"Failed to clear automation assignment.",
+      "set_b":"Failed to set bypass assignment.",
+      "set_c":"Failed to set controller assignment.",
+      "set_a":"Failed to set automation assignment.",
+      "learn_arm":"Failed to arm parameter for MIDI Learn.",
+      "learn_darm":"Failed to disarm parameter for MIDI Learn.",
+      "clear_asn":"Failed to clear assignment.",
+      "clear_asns":"Failed to clear assignment(s)."
+    }
+  },
+  "auth":{
+    "gen":{
+      "auth":"This computer is authorized to run %s. To deauthorize this computer, click 'Deauthorize This Computer' below:",
+      "deauth":"To authorize this computer, click 'Authorize This Computer' below:",
+	  "limit":"Your account has reached the limit of computer authorizations for %s. Please sign into your Line 6 account to manage your computer authorizations."
+    },
+    "login":{
+      "user":"Username",
+      "pass":"Password",
+      "offline":"Cannot reach servers.  Please make sure this computer is connected to the Internet.",
+      "fail":"Sign-in failed, incorrect username or password",
+      "ok":"Successful sign-in",
+      "prompt1":"Please sign in to your Line 6 account:",
+      "prompt2":"Sign-in is required for managing account-related features, such as your %s license and Helix MarketPlace assets",
+      "prompt3":"Sign-in is required for managing account-related features, such as premium Helix MarketPlace assets",
+      "prompt4":"You must sign in to authorize your computer to run %s",
+      "prompt5":"Sign-in is required to check for Helix firmware updates.",
+      "downloadprompt":"Sign-in is required to download updates:"
+    },
+    "root":{
+      "state":{
+        "hello":"Hi, %s",
+        "offline":"OFFLINE",
+        "nologin":"SIGNED OUT"
+      },
+      "status":{
+        "auth":"Authorizing...",
+        "dath":"Deauthorizing...",
+        "serv":"Contacting Server...",
+        "logi":"Logging in...",
+        "logo":"Logging out...",
+        "crea":"Creating user...",
+        "rest":"Resetting password...",
+        "sync":"Synchronizing licenses...",
+        "refr":"Refreshing licenses...",
+        "autl":"Authenticating licenses...",
+        "acql":"Acquiring license..."
+      },
+      "offline":"%s is unable to reach a Line 6 server to validate your account information.",
+      "nologin":"Please sign-in to your Line 6 account",
+      "purchQ":"Your trial expires in %s. You can purchase a full license now or at any time.\n\nWould you like to purchase a full license now?",
+      "lic_ok":"Your license never expires, and this computer is authorized to run the software.",
+      "licmsg":{
+        "trial_add":"A %s trial license has been added to your account",
+        "valid":"You have a valid license",
+        "trial":"You have an active trial license",
+        "trial_ok":"You are eligible to try %s",
+        "expired":"Your license has expired"
+      },
+      "authmsg":{
+        "limit":"but you have reached the maximum number of computer authorizations",
+        "auth":"but you must authorize this computer to use the software"
+      }
+    },
+    "trial":{
+      "time":{
+         "days":"%0.f days",
+         "hours":"%0.f hours",
+         "minutes":"%0.f minutes"
+      },
+      "lic":{
+        "full":"You own a full license of %s.",
+        "trial":"You have a trial license for %s, which expires in %s. To use %s without expiration, please select the buy option below.",
+        "trial_ok":"You can buy %s now, or at any time during or after the trial. Please select an option below:",
+        "expired":"Unfortunately your %s trial has expired. To use %s without expiration, please select the buy option below.",
+        "notfound":"A valid %s license cannot be found. Please contact Line 6 Customer Support.",
+        "notok":"Unfortunately your account is not eligible for the %s trial at this time.\n\nIn order to use %s, please select the buy option below:"
+      }
+    }
+  },
+  "device":{
+    "status":{
+      "none":"No device connected",
+      "offline":"(offline mode)",
+      "noinit":"Plugin not initialized",
+      "inter":"Connection Interrupted",
+      "conn":"Connecting...",
+      "updating":"Update in progress"
+    }
+  },
+  "editor":{
+    "overQ":"Are you sure you want to overwrite the current preset?"
+  },
+  "favorite":{
+    "menu":{
+      "copy":"Copy",
+      "paste":"Paste",
+      "rename":"Rename",
+      "clear":"Clear...",
+      "clearall":"Clear All...",
+      "import":"Import...",
+      "export":"Export..."
+    },
+    "clearQ":"Are you sure you want to clear the selected favorite(s)?",
+    "clearThisQ":"Are you sure you want to clear this favorite?",
+    "clearAllQ":"Are you sure you want to clear all favorites?",
+    "overQ":"Are you sure you want to overwrite the highlighted favorite(s)?",
+    "importTitle":"Import Favorite(s)",
+    "pasteTitle":"Paste Favorite(s)",
+    "err":{
+      "imp":"Failed to import favorite(s).",
+      "exp":"Failed to export favorite(s).",
+      "load":"Failed to load favorite.",
+      "limitreached":"Could not import one or more favorites.\n\nThe maximum number of favorites for this device has been reached."
+    }
+  },
+  "ir":{
+    "menu":{
+      "copy":"Copy",
+      "paste":"Paste",
+      "rename":"Rename",
+      "clear":"Clear",
+      "import":"Import...",
+      "export":"Export..."
+    },
+    "clearQ":"Are you sure you want to clear the selected IRs?",
+    "overQ":"Are you sure you want to overwrite highlighted IRs?",
+    "err":{
+      "impA":"Failed to import Impulse Response file.",
+      "impB":"%s was unable to import IRs in this set due to following errors:",
+      "expA":"Failed to export Impulse Repsonse.",
+      "expB":"%s was unable to export IRs in this set due to following errors:",
+      "hmp":{
+        "impA":"%s was unable to import this IR because the required license was not found.",
+        "impB":"%s was unable to import these IRs because the required licenses were not found.",
+        "impC":"%s was unable to import some of the IRs in this set because required licenses were not found.",
+        "expA":"%s was unable to export this IR because the required license was not found.",
+        "expB":"%s was unable to export these IRs because the required licenses were not found.",
+        "expC":"%s was unable to export some of the IRs in this set because required licenses were not found."
+      }
+    }
+  },
+  "model":{
+    "err":{
+      "clear":"Failed to clear model.",
+      "load":"Failed to load model."
+    }
+  },
+  "preset_name":{
+    "menu":{
+      "open":"Open From Disk...",
+      "saved":"Save To Disk...",
+      "savel":"Save To Library..."
+    }
+  },
+  "preset":{
+    "menu":{
+      "copy":"Copy",
+      "paste":"Paste",
+      "rename":"Rename",
+      "import":"Import...",
+      "export":"Export..."
+    },
+    "prog":{
+      "stop":"Stopping transfers...",
+      "save_s":"Saving setlist...",
+      "load_s":"Loading setlist...",
+      "save_b":"Saving bundle...",
+      "load_b":"Loading bundle..."
+    },
+    "over_pQ":"Are you sure you want to overwrite highlighted presets?",
+    "over_bQ":"Are you sure you want to overwrite all presets with this bundle?",
+    "over_sQ":"Are you sure you want to overwrite all presets in this setlist?",
+    "err":{
+      "imp_pA":"Failed to import preset file.",
+      "imp_pB":"%s was unable to import presets in this set due to following errors:",
+      "imp_sA":"Failed to import setlist file.",
+      "imp_sB":"%s was unable to import some presets from %s due to following errors:",
+      "imp_sC":"%s was unable to import %d presets from %s due to following translation errors:",
+      "imp_bA":"Failed to import bundle file.",
+      "imp_bB":"%s was unable to import some presets from %s due to following errors:",
+      "imp_bC":"%s was unable to import %d presets from %s due to following translation errors:",
+
+      "exp_pA":"Failed to export preset.",
+      "exp_pB":"%s was unable to export presets in this set due to following errors:",
+      "exp_sA":"Failed to export setlist.",
+      "exp_sB":"%s was unable to export some presets to %s due to following errors:",
+      "exp_bA":"Failed to export bundle.",
+      "exp_bB":"%s was unable to export some presets to %s due to following errors:",
+      "model":{
+        "imp_pA":"%s was unable to import this preset because it contains unrecognized models.",
+        "imp_pB":"%s was unable to import these presets because they contains unrecognized models.",
+        "imp_pC":"%s was unable to import some of the presets in this set because they contains unrecognized models.",
+        "imp_sA":"%s was unable to import %s because it contains unrecognized models.",
+        "imp_sB":"%s was unable to import some of the presets from %s because they contains unrecognized models."
+      },
+      "hmp":{
+        "imp_pA":"%s was unable to import this preset because the required license was not found.",
+        "imp_pB":"%s was unable to import these presets because the required licenses were not found.",
+        "imp_pC":"%s was unable to import some of the presets in this set because required licenses were not found.",
+        "imp_sA":"%s was unable to import %s because the required license was not found.",
+        "imp_sB":"%s was unable to import some of the presets from %s because the required licenses were not found.",
+        "imp_b":"%s was unable to import some of the presets from %s because the required licenses were not found.",
+
+        "exp_pA":"%s was unable to export this preset because the required license was not found.",
+        "exp_pB":"%s was unable to export these presets because the required licenses were not found.",
+        "exp_pC":"%s was unable to export some of the presets in this set because required licenses were not found.",
+        "exp_sA":"%s was unable to export to %s because the required license was not found.",
+        "exp_sB":"%s was unable to export some of the presets to %s because the required licenses were not found.",
+      	"exp_b":"%s was unable to export some of the presets to %s because the required licenses were not found."
+      }
+    }
+  },
+  "signalflow":{
+    "clearAllQ":"Are you sure you want to clear all blocks?",
+    "err":{
+      "move":"Failed to move item(s).",
+	  "move2":"There were error(s) rearranging the signal flow as a result of this move.",
+      "paste":"Failed to paste item.",
+      "clear":"Failed to remove item.",
+      "cut":"Failed to cut item.",
+      "copy":"Failed to copy item.",
+      "add":"Failed to add item.",
+      "bypass":"Failed to bypass item.",
+      "learn_arm":"Failed to arm bypass for MIDI Learn.",
+      "learn_darm":"Failed to disarm bypass for MIDI Learn.",
+      "factorydefault":"Failed to set as factory default.",
+      "userdefault":"Failed to set as user default."
+    },
+    "menu":{
+      "bypass":"Bypass",
+      "enable":"Enable",
+      "cut":"Cut",
+      "copy":"Copy",
+      "paste":"Paste",
+      "paste_b":"Paste Before",
+      "paste_a":"Paste After",
+      "create_i":"Create Input",
+      "create_o":"Create Output",
+      "restore_s":"Restore Split",
+      "restore_m":"Restore Merge",
+      "clear":"Clear Block",
+      "clearall":"Clear All Blocks",
+      "auto":"Automation Bypass",
+      "bypass_a":"Bypass Assign",
+      "bypass_m":"MIDI Bypass",
+      "bypass_s":"Snapshot Bypass",
+      "learn":"MIDI Learn...",
+      "nolearn":"Disable MIDI Learn...",
+      "savefavorite":"Save As Favorite...",
+      "factorydefault":"Factory Default",
+      "userdefault":"User Default"
+    },
+    "undo":{
+      "param":"Set Parameter",
+      "model":"Change Model",
+      "move":"Move Item",
+      "add":"Add Item",
+      "paste":"Paste Item",
+      "clear":"Remove Item",
+      "load":"Load Preset",
+      "device":"Set Device Setting",
+      "clearall":"Clear All Blocks",
+	  "hw":"All Hardware Changes"
+    }
+  },
+  "snapshot":{
+  	"color":{
+  	  "auto":"Auto",
+  	  "white":"White",
+  	  "red":"Red",
+  	  "oranged":"Dark Orange",
+  	  "orangel":"Light Orange",
+  	  "yellow":"Yellow",
+  	  "green":"Green",
+  	  "bluel":"Turquoise",
+  	  "blue":"Blue",
+  	  "violet":"Violet",
+  	  "pink":"Pink",
+  	  "off":"Off"
+  	},
+    "menu":{
+      "copy":"Copy",
+      "paste":"Paste",
+      "rename":"Rename",
+      "color":"Set Snapshot Color"
+    },
+	"err":{
+	  "rename":"Failed to rename snapshot.",
+	  "color":"Failed to set snapshot color.",
+	  "helix":"The Helix device failed to recall snapshot data properly.",
+	  "recall":"Failed to recall snapshot.",
+	  "copy":"Failed to copy snapshot.",
+	  "paste":"Failed to paste snapshot."
+	}
+  },
+  "status":{
+    "menu":{
+      "acco":"Manage Account...",
+      "ps":"Get More Presets...",
+      "ir":"Get More IRs...",
+      "deauth":"Deauthorize Computer..",
+      "auth":"Authorize Computer...",
+      "login":"Sign In...",
+      "logout":"Sign Out"
+    },
+	"text":{
+      "logout":"My Account",
+      "loginp":"Logging in %s...",
+      "trial_days":"%0.f days remaining in trial",
+      "trial_hours":"%0.f hours remaining in trial",
+      "trial_mins":"%0.f minutes remaining in trial",
+      "trial_secs":"Less than 1 min remaining in trial",
+      "expired":"Trial Expired"
+    },
+    "msg":{
+      "deauthQ":"Deauthorizing will prevent any Line 6 assets associated with your account from functioning on this computer.\n\nAre you sure?",
+      "limit":"Your account has reached the limit of computer authorizations for %s.\n\nPlease sign into your Line 6 account to manage your computer authorizations.",
+      "auth":"This computer is now authorized.",
+      "deauth":"This computer has been deauthorized.",
+      "logoutQ":"Are you sure you want to sign out?",
+      "loggedout":"%s is signed out.",
+      "loggedin":"%s %s is now signed in.",
+      "purchQ":"You are running a timed trial of %s.\n\nWould you like to purchase a full license?",
+      "offline":"Cannot reach servers.  Please make sure this computer is connected to the Internet."
+    },
+    "update":{
+      "available":"Update available for your %s!",
+      "uptodate":"Your %s is up to date.",
+      "needscheck":"Check for updates",
+      "checking":"Checking for updates...",
+      "hasupdates":"Updates available!",
+      "noupdates":"No updates available."
+    }
+  },
+  "tempo":{
+    "menu":{
+      "snap":"Per Snapshot",
+      "preset":"Per Preset",
+      "global":"Global",
+      "host":"Host Sync"
+    }
+  },
+  "tuner":{
+    "err":{
+      "start":"Failed to start tuner."
+    }
+  },
+  
+  "backup":{
+    "ok":"Backup completed successfully!",
+    "cancelQ":"Are you sure you want to cancel the backup?",
+    "errorQ":"Error occurred during the backup:\n\n%s (code %d).\n\nDo you want to retry?",
+    "stat":{
+      "cancel":"Cancelling...",
+      "create":"Creating backup..."
+    },
+    "hmp_i":"%s was unable to backup some of the IRs because the required licenses were not found.",
+    "hmp_p":"%s was unable to backup some of the presets because the required licenses were not found.",
+    "overQ":"Filename already exists in this backup folder.\n\nDo you want to overwrite it?",
+    "hiddenQ":"Names that begin with a dot \".\" are reserved by the system.\n\nIf you decide to go ahead and use this name, the file will be hidden.\n\nDo you want to continue using this name?",
+    "invalid":"Invalid filename specified."
+  },
+  "restore":{
+    "overQ":"Are you sure you want to overwrite data in your Helix with the contents of this backup?",
+    "ok":"Restore completed successfully!",
+    "errorQ":"Error occurred during the restore:\n\n%s (code %d).\n\nDo you want to retry?",
+    "badir":"%s was unable to restore one or more of the IRs because the sample data they contain was determined to be invalid.",
+    "hmp_i":"%s was unable to restore some of the IRs because the required licenses were not found.",
+    "hmp_p":"%s was unable to restore some of the presets because the required licenses were not found."
+  },
+  "extract":{
+    "ok":"File extraction completed successfully.\n\nWould you like to open the folder containing the files?",
+    "errorQ":"Error occurred extracing one or more files:\n\n%s (code %d).\n\nDo you want to retry?"
+  },
+  "command":{
+    "menu":{
+      "cut":"Cut",
+      "copy":"Copy",
+      "paste":"Paste",
+      "clear":"Clear",
+      "copya":"Copy All",
+      "pastea":"Paste All",
+      "cleara":"Clear All..."
+    },
+    "clearQ":"Are you sure you want to clear all commands?\n\n(NOTE: this action cannot be undone.)"
+  },
+  "prefs":{
+  	"presets":{
+  	  "overbQ":"Are you sure you want to overwrite all presets with this bundle?",
+  	  "clearpQ":"Are you sure you want to clear your entire preset library?",
+  	  "restoreQ":"Are you sure you want to restore your factory setlists back to the default factory setlists?",
+  	  "cleariQ":"Are you sure you want to clear your entire IR library?"
+  	},
+    "hcm":{
+      "off":"Turning Hardware Compatibility off allows for more simultaneous blocks per instance, but the presets you make in this mode may not be compatible with your Helix or HX hardware.\n\nProceed with caution!",
+      "trio":"Selecting Helix Floor/Rack/LT will alter Helix Native's signal flow, model list, and presets to allow preset compatibility with Helix Floor, Rack, and LT hardware.\n\nProceed with caution!",
+      "fx":"Selecting HX Effects will alter Helix Native's signal flow, model list, and presets to allow preset compatibility with HX Effects hardware.\n\nProceed with caution!",
+      "stomp":"Selecting HX Stomp will alter Helix Native's signal flow, model list, and presets to allow preset compatibility with HX Stomp hardware.\n\nProceed with caution!",
+      "stompxl":"Selecting HX Stomp XL will alter Helix Native's signal flow, model list, and presets to allow preset compatibility with HX Stomp XL hardware.\n\nProceed with caution!",
+      "notransQ":"Translation of current preset failed.\n\nProceed with change and discard the current preset?",
+	  "error":"Could not change hardware compatibility mode:\n\n%s (code %d)"
+    }
+  },
+  "savetolib":{
+    "overQ":"Are you sure you want to overwrite the selected preset?"
+  },
+  "savefavorite":{
+    "addtext":"Choose where to add in favorites list:",
+    "replacetext":"Choose which favorite to replace:",
+    "overQ":"Are you sure you want to overwrite the selected favorite?"
+  },
+  "updater":{
+    "uptodate":"Your %s device is up to date with firmware version %s.\n\nPress OK to return to HX Edit.",
+    "noquit":"Devices are currently updating. Please wait until device updates have completed before quitting.\n\nPress OK to return to %s.",
+    "dlg":"An update is available for your %s.\n\nWould you like to update now?",
+    "prompt":"Updates are available for your %s!\n\nClick OK to view and install these updates.",
+    "willquit":"%s will now exit so the installer can run.\n\n(Press Cancel to keep running and abort the installer. You can run the downloaded installer manually at a later time.)",
+    "dlfailed1":"Installer failed to download.\n\nA web browser will now open with a web page containing the download link.\n\nYou can download and run the installer manually.",
+    "dlfailed2":"Installer failed to download.\n\nGo to the line6.com downloads page and run the installer manually.",
+    "dlfailed3":"Failed to download firmware update file.\n\nPlease check your Internet connection and try again.",
+    "installfailed":"Failed to open installer.\n\nTry to open the installer manually or try re-downloading from the line6.com downloads page.",
+    "choosedownload":"Choose the download location and file name for the installer.\n\nThis is so you can manually run the installer later if you need to.",
+    "header":{
+        "update":"Update %s"
+    },
+    "center":{
+        "firmware":"%s Firmware",
+        "appupdate":"IMPORTANT: You must first update HX Edit to the latest version before updating your Helix firmware.",
+        "updating":"Updating...",
+        "downloading":"Downloading...",
+        "dldone":"Download complete.  Click Update Now to complete the update.",
+        "dlprogress":"Downloading... (%s of %s)",
+        "inprogress":"(another update is already in progress)"
+    },
+    "step":{
+        "backup":"Before updating your %s, HX Edit will prompt you to create a Helix Backup (.hxb).\n\nIn the unlikely event of an update error, you may use this file to restore your device.\n\nClick OK button to continue.",
+        "update":"HX Edit will now update your %s firmware from %s to %s.\n\nThis process may take a few minutes.",
+        "done":"HX Edit has successfully updated your %s firmware from %s to %s.\n\n%s is now rebuilding its preset library and will reconnect to HX Edit in a few minutes."
+    },
+    "status":{
+      "loginok":"Login successful. Checking for updates...",
+      "syncok":"Check for updates successful.",
+      "syncfail":"Check for updates failed, please retry.",
+      "reboot":"Rebooting device to prepare for update...",
+      "dl_start":"Beginning firmware download...",
+      "dl_ok":"Firmware downloaded successfully.",
+      "dl_fail":"Firmware downloaded failed! Click Update to retry.",
+      "devsyncok":"Device synced successfully, updates available.",
+      "offline":"Logged in, but unable to connect. Check connection and try again.",
+      "offline2":"Unable to connect, retrying...",
+      "logging":"Logging in...",
+      "loginfail":"Login failed!",
+
+      "update":{
+        "avail":"Firmware update %s available.",
+        "ready": "Ready to update firmware from version %s to %s.",
+        "suspend":"Firmware update suspended, awaiting user response...",
+        "init":"Initializing firmware installation...",
+        "err":"Firmware update error.",
+        "resume":"Resuming firmware update...",
+        "start":"Beginning update process...",
+        "prog":"Installing device firmware... (%.0f%% complete)",
+        "ok":"Update successful!"
+      },
+      "backup":{
+        "start":"Backing up...",
+        "done":"Backup complete.",
+        "fail":"Backup failed. Click OK to retry.",
+        "faildlg":"Backup dialog failed to load. Click OK to retry."
+      }
+    }
+  },
+  "app": {
+    "err":{
+       "browser":"Failed to launch web browser for %s",
+       "pdf":"Failed to launch PDF viewer for %s",
+       "connect":"Failed to connect to device.",
+       "undo":"Failed to undo edit buffer: ",
+       "redo":"Failed to redo edit buffer: ",
+       "toomany":"The maximum number of Helix Native instances has been reached.  This plugin will not process audio.",
+       "noauth":"Helix Native is not authorized.  This plugin will not process audio.",
+       "dsp":"Failed to connect to DSP engine."
+    },
+    "quitQ":"There are transfers in progress.\n\nAre you sure you want to quit and abort these transfers?",
+    "overQ":"Are you sure you want to overwrite the current preset with:\n\n%s?",
+    "impsQ":"Do you want to import all the presets from:\n\n%s?",
+    "imps":"To import a setlist to the Helix device, use the Import Setlist option.",
+    "firstnative": "This is the first time you have opened Helix Native.\n\nFactory presets are being installed to your library.\n\nThis shouldn't take more than a few seconds.",
+    "buildlatestnative": "This is the first time you have opened your preset library in Helix Native 3.00 (or later).\n\nYour presets are being converted to latest format.",
+    "midiccA":"Incoming MIDI CC %d is reserved and cannot be used for assignments.",
+    "midiccB":"Incoming MIDI CC %d is reserved for use with Helix hardware.\nYou can turn off hardware compatibility mode in the Preferences to allow usage of this MIDI CC in Helix Native.",
+    "fw":"%s requires Helix firmware version %s or higher.\n\nPlease use Line 6 Updater to update to your Helix device.",
+    "otherapp": {
+        "mac": "Another application is already connected to the Helix device.\n\nClose that application and click Retry to connect, or click Cancel to ignore.",
+        "win": "Another application is already connected to the Helix device.\n\nClose that application and click Try Again to connect, or click Cancel to ignore."
+    },
+    "hmp":{
+      "convert":"Welcome to Marketplace enabled Helix Native.\n\nPreset/IR libraries are being converted.\n\nThis shouldn't take more than a few seconds.",
+      "ie_purch":"The following product packs are available for purchase from Helix Marketplace:",
+      "ie_login":"If you have already purchased these packs please sign in to the server to synchronize your licenses."
+    }
+  },
+  "dlgtitle":{
+    "file":{
+      "backup":"Backup Folder",
+      "open":"Open Preset File",
+      "save":"Save Preset File",
+      "imp_b":"Import Bundle File",
+      "imp_s":"Import Setlist File",
+      "imp_p":"Import Preset File(s)",
+      "imp_i":"Import Impulse File(s)",
+      "imp_f":"Import Favorite File(s)",
+      "exp_b":"Export Bundle File",
+      "exp_s":"Export Setlist File",
+      "exp_p":"Export Preset File",
+      "exp_pf":"Export Preset Files to Folder",
+      "exp_i":"Export Impulse File",
+      "exp_if":"Export Impulse Files to Folder",
+      "exp_f":"Export Favorite File",
+      "exp_ff":"Export Favorites to Folder",
+      "download":"Installer Download Filename"
+    },
+    "about":"About %s",
+    "backup":"Create Backup",
+    "restore":"Restore From Backup",
+    "extract":"Extract Files From Backup",
+    "command":"%s: Command Center",
+    "globaleq":"%s: Global EQ",
+    "updates":"%s: Updates",
+    "prefs":"%s Preferences",
+    "savetolib":"Save To Library",
+    "savefavorite":"Save As Favorite",
+    "importfavorite":"Import Favorite(s)",
+    "update":"%s Firmware %s"
+  }
+}
+  
